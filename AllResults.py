@@ -2,7 +2,7 @@
 Code to run all fast tcf scripts
 Note: user must be in directory where results are located
 """
-def AllResults():
+def postProcessTHIS():
     import os
     import tkinter
     from tkinter import filedialog

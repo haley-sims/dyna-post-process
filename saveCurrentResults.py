@@ -21,16 +21,7 @@ def saveCurrentResults(groundMotion, runName):
         os.mkdir(resultsFolder)
 
     templatedir = r'J:\S-F\230000\238558-00\4 Internal Project Data\4-04 Calculations\Struct\97 - LsDyna\0001_Results\TEMPLATES'
-    # templates = os.listdir(templatedir)
-    # loop through each template and save as new file with date and time stamp
-    # for i in templates:
-    #     fileName = 'TEMPLATE.xlsx'
-    #     filein = os.path.join(filedir, fileName) # full worksheet name to be manipulated
-    #     xlworkbook = op.load_workbook(filein)
-    #     excelSave = resultsFolder+'/'+folderName+'.xlsx'
-    #
-    #
-    # xlworkbook.save(excelSave)
+
     jobFolder = filedir
-    
-    return resultsFolder, xlworkbook, excelSave, templatedir, jobFolder
+
+    return resultsFolder, folderName, templatedir, jobFolder
