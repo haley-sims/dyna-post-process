@@ -1,0 +1,864 @@
+# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to divtiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+# Job file:  "Z:\LS_Dyna_runs5\SCVMC\r038_hs\REC01LS.ptf"
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page wide
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.08 1.00,0.45
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format automatic
+layout graph 1 x-axis precision 3
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 3
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+# User Defined Colours
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+beam 211 normal y tag curve_1
+beam 212 normal y tag curve_2
+beam 213 normal y tag curve_3
+beam 277 normal y tag curve_4
+beam 278 normal y tag curve_5
+beam 279 normal y tag curve_6
+beam 280 normal y tag curve_7
+beam 281 normal y tag curve_8
+beam 282 normal y tag curve_9
+beam 283 normal y tag curve_10
+beam 284 normal y tag curve_11
+beam 285 normal y tag curve_12
+beam 289 normal y tag curve_13
+beam 290 normal y tag curve_14
+beam 291 normal y tag curve_15
+beam 292 normal y tag curve_16
+beam 293 normal y tag curve_17
+beam 294 normal y tag curve_18
+beam 295 normal y tag curve_19
+beam 296 normal y tag curve_20
+beam 297 normal y tag curve_21
+beam 298 normal y tag curve_22
+beam 299 normal y tag curve_23
+beam 300 normal y tag curve_24
+beam 304 normal y tag curve_25
+beam 305 normal y tag curve_26
+beam 306 normal y tag curve_27
+beam 307 normal y tag curve_28
+beam 308 normal y tag curve_29
+beam 309 normal y tag curve_30
+beam 310 normal y tag curve_31
+beam 311 normal y tag curve_32
+beam 312 normal y tag curve_33
+beam 313 normal y tag curve_34
+beam 314 normal y tag curve_35
+beam 315 normal y tag curve_36
+beam 319 normal y tag curve_37
+beam 320 normal y tag curve_38
+beam 321 normal y tag curve_39
+beam 325 normal y tag curve_40
+beam 326 normal y tag curve_41
+beam 327 normal y tag curve_42
+beam 328 normal y tag curve_43
+beam 329 normal y tag curve_44
+beam 330 normal y tag curve_45
+beam 331 normal y tag curve_46
+beam 332 normal y tag curve_47
+beam 333 normal y tag curve_48
+beam 337 normal y tag curve_49
+beam 338 normal y tag curve_50
+beam 339 normal y tag curve_51
+beam 358 normal y tag curve_52
+beam 359 normal y tag curve_53
+beam 360 normal y tag curve_54
+beam 361 normal y tag curve_55
+beam 362 normal y tag curve_56
+beam 363 normal y tag curve_57
+beam 364 normal y tag curve_58
+beam 365 normal y tag curve_59
+beam 366 normal y tag curve_60
+beam 367 normal y tag curve_61
+beam 368 normal y tag curve_62
+beam 369 normal y tag curve_63
+beam 376 normal y tag curve_64
+beam 377 normal y tag curve_65
+beam 379 normal y tag curve_66
+beam 380 normal y tag curve_67
+beam 381 normal y tag curve_68
+beam 382 normal y tag curve_69
+beam 383 normal y tag curve_70
+beam 384 normal y tag curve_71
+beam 385 normal y tag curve_72
+beam 386 normal y tag curve_73
+beam 387 normal y tag curve_74
+beam 412 normal y tag curve_75
+beam 413 normal y tag curve_76
+beam 414 normal y tag curve_77
+beam 415 normal y tag curve_78
+beam 416 normal y tag curve_79
+beam 417 normal y tag curve_80
+beam 421 normal y tag curve_81
+beam 422 normal y tag curve_82
+beam 423 normal y tag curve_83
+beam 433 normal y tag curve_84
+beam 434 normal y tag curve_85
+beam 435 normal y tag curve_86
+beam 436 normal y tag curve_87
+beam 437 normal y tag curve_88
+beam 438 normal y tag curve_89
+beam 445 normal y tag curve_90
+beam 446 normal y tag curve_91
+beam 447 normal y tag curve_92
+beam 478 normal y tag curve_93
+beam 480 normal y tag curve_94
+beam 487 normal y tag curve_95
+beam 489 normal y tag curve_96
+beam 490 normal y tag curve_97
+beam 492 normal y tag curve_98
+beam 493 normal y tag curve_99
+beam 495 normal y tag curve_100
+beam 3341 normal y tag curve_101
+beam 3343 normal y tag curve_102
+beam 3346 normal y tag curve_103
+beam 3347 normal y tag curve_104
+beam 3349 normal y tag curve_105
+beam 3352 normal y tag curve_106
+beam 3353 normal y tag curve_107
+beam 3355 normal y tag curve_108
+beam 3358 normal y tag curve_109
+beam 3359 normal y tag curve_110
+beam 3361 normal y tag curve_111
+beam 3364 normal y tag curve_112
+beam 3365 normal y tag curve_113
+beam 3367 normal y tag curve_114
+beam 3370 normal y tag curve_115
+beam 3371 normal y tag curve_116
+beam 3373 normal y tag curve_117
+beam 3376 normal y tag curve_118
+beam 3377 normal y tag curve_119
+beam 3379 normal y tag curve_120
+beam 3382 normal y tag curve_121
+beam 3383 normal y tag curve_122
+beam 3385 normal y tag curve_123
+beam 3388 normal y tag curve_124
+beam 3389 normal y tag curve_125
+beam 3391 normal y tag curve_126
+beam 3394 normal y tag curve_127
+beam 3395 normal y tag curve_128
+beam 3397 normal y tag curve_129
+beam 3400 normal y tag curve_130
+beam 3401 normal y tag curve_131
+beam 3403 normal y tag curve_132
+beam 3406 normal y tag curve_133
+beam 5781 normal y tag curve_134
+beam 5997 normal y tag curve_135
+beam 5998 normal y tag curve_136
+beam 5999 normal y tag curve_137
+beam 6000 normal y tag curve_138
+beam 6001 normal y tag curve_139
+beam 6002 normal y tag curve_140
+beam 6003 normal y tag curve_141
+beam 6004 normal y tag curve_142
+beam 6005 normal y tag curve_143
+beam 6006 normal y tag curve_144
+beam 6007 normal y tag curve_145
+beam 6008 normal y tag curve_146
+beam 6009 normal y tag curve_147
+beam 6010 normal y tag curve_148
+beam 6011 normal y tag curve_149
+beam 6012 normal y tag curve_150
+beam 6034 normal y tag curve_151
+beam 6036 normal y tag curve_152
+beam 6037 normal y tag curve_153
+beam 6038 normal y tag curve_154
+beam 6039 normal y tag curve_155
+beam 6040 normal y tag curve_156
+beam 6042 normal y tag curve_157
+beam 6043 normal y tag curve_158
+beam 6044 normal y tag curve_159
+beam 6045 normal y tag curve_160
+beam 6046 normal y tag curve_161
+beam 6047 normal y tag curve_162
+#
+# Operations for unblanked curves
+#
+operation div curve_1 4.44822 tag curve_163
+operation div curve_2 4.44822 tag curve_164
+operation div curve_3 4.44822 tag curve_165
+operation div curve_4 4.44822 tag curve_166
+operation div curve_5 4.44822 tag curve_167
+operation div curve_6 4.44822 tag curve_168
+operation div curve_7 4.44822 tag curve_169
+operation div curve_8 4.44822 tag curve_170
+operation div curve_9 4.44822 tag curve_171
+operation div curve_10 4.44822 tag curve_172
+operation div curve_11 4.44822 tag curve_173
+operation div curve_12 4.44822 tag curve_174
+operation div curve_13 4.44822 tag curve_175
+operation div curve_14 4.44822 tag curve_176
+operation div curve_15 4.44822 tag curve_177
+operation div curve_16 4.44822 tag curve_178
+operation div curve_17 4.44822 tag curve_179
+operation div curve_18 4.44822 tag curve_180
+operation div curve_19 4.44822 tag curve_181
+operation div curve_20 4.44822 tag curve_182
+operation div curve_21 4.44822 tag curve_183
+operation div curve_22 4.44822 tag curve_184
+operation div curve_23 4.44822 tag curve_185
+operation div curve_24 4.44822 tag curve_186
+operation div curve_25 4.44822 tag curve_187
+operation div curve_26 4.44822 tag curve_188
+operation div curve_27 4.44822 tag curve_189
+operation div curve_28 4.44822 tag curve_190
+operation div curve_29 4.44822 tag curve_191
+operation div curve_30 4.44822 tag curve_192
+operation div curve_31 4.44822 tag curve_193
+operation div curve_32 4.44822 tag curve_194
+operation div curve_33 4.44822 tag curve_195
+operation div curve_34 4.44822 tag curve_196
+operation div curve_35 4.44822 tag curve_197
+operation div curve_36 4.44822 tag curve_198
+operation div curve_37 4.44822 tag curve_199
+operation div curve_38 4.44822 tag curve_200
+operation div curve_39 4.44822 tag curve_201
+operation div curve_40 4.44822 tag curve_202
+operation div curve_41 4.44822 tag curve_203
+operation div curve_42 4.44822 tag curve_204
+operation div curve_43 4.44822 tag curve_205
+operation div curve_44 4.44822 tag curve_206
+operation div curve_45 4.44822 tag curve_207
+operation div curve_46 4.44822 tag curve_208
+operation div curve_47 4.44822 tag curve_209
+operation div curve_48 4.44822 tag curve_210
+operation div curve_49 4.44822 tag curve_211
+operation div curve_50 4.44822 tag curve_212
+operation div curve_51 4.44822 tag curve_213
+operation div curve_52 4.44822 tag curve_214
+operation div curve_53 4.44822 tag curve_215
+operation div curve_54 4.44822 tag curve_216
+operation div curve_55 4.44822 tag curve_217
+operation div curve_56 4.44822 tag curve_218
+operation div curve_57 4.44822 tag curve_219
+operation div curve_58 4.44822 tag curve_220
+operation div curve_59 4.44822 tag curve_221
+operation div curve_60 4.44822 tag curve_222
+operation div curve_61 4.44822 tag curve_223
+operation div curve_62 4.44822 tag curve_224
+operation div curve_63 4.44822 tag curve_225
+operation div curve_64 4.44822 tag curve_226
+operation div curve_65 4.44822 tag curve_227
+operation div curve_66 4.44822 tag curve_228
+operation div curve_67 4.44822 tag curve_229
+operation div curve_68 4.44822 tag curve_230
+operation div curve_69 4.44822 tag curve_231
+operation div curve_70 4.44822 tag curve_232
+operation div curve_71 4.44822 tag curve_233
+operation div curve_72 4.44822 tag curve_234
+operation div curve_73 4.44822 tag curve_235
+operation div curve_74 4.44822 tag curve_236
+operation div curve_75 4.44822 tag curve_237
+operation div curve_76 4.44822 tag curve_238
+operation div curve_77 4.44822 tag curve_239
+operation div curve_78 4.44822 tag curve_240
+operation div curve_79 4.44822 tag curve_241
+operation div curve_80 4.44822 tag curve_242
+operation div curve_81 4.44822 tag curve_243
+operation div curve_82 4.44822 tag curve_244
+operation div curve_83 4.44822 tag curve_245
+operation div curve_84 4.44822 tag curve_246
+operation div curve_85 4.44822 tag curve_247
+operation div curve_86 4.44822 tag curve_248
+operation div curve_87 4.44822 tag curve_249
+operation div curve_88 4.44822 tag curve_250
+operation div curve_89 4.44822 tag curve_251
+operation div curve_90 4.44822 tag curve_252
+operation div curve_91 4.44822 tag curve_253
+operation div curve_92 4.44822 tag curve_254
+operation div curve_93 4.44822 tag curve_255
+operation div curve_94 4.44822 tag curve_256
+operation div curve_95 4.44822 tag curve_257
+operation div curve_96 4.44822 tag curve_258
+operation div curve_97 4.44822 tag curve_259
+operation div curve_98 4.44822 tag curve_260
+operation div curve_99 4.44822 tag curve_261
+operation div curve_100 4.44822 tag curve_262
+operation div curve_101 4.44822 tag curve_263
+operation div curve_102 4.44822 tag curve_264
+operation div curve_103 4.44822 tag curve_265
+operation div curve_104 4.44822 tag curve_266
+operation div curve_105 4.44822 tag curve_267
+operation div curve_106 4.44822 tag curve_268
+operation div curve_107 4.44822 tag curve_269
+operation div curve_108 4.44822 tag curve_270
+operation div curve_109 4.44822 tag curve_271
+operation div curve_110 4.44822 tag curve_272
+operation div curve_111 4.44822 tag curve_273
+operation div curve_112 4.44822 tag curve_274
+operation div curve_113 4.44822 tag curve_275
+operation div curve_114 4.44822 tag curve_276
+operation div curve_115 4.44822 tag curve_277
+operation div curve_116 4.44822 tag curve_278
+operation div curve_117 4.44822 tag curve_279
+operation div curve_118 4.44822 tag curve_280
+operation div curve_119 4.44822 tag curve_281
+operation div curve_120 4.44822 tag curve_282
+operation div curve_121 4.44822 tag curve_283
+operation div curve_122 4.44822 tag curve_284
+operation div curve_123 4.44822 tag curve_285
+operation div curve_124 4.44822 tag curve_286
+operation div curve_125 4.44822 tag curve_287
+operation div curve_126 4.44822 tag curve_288
+operation div curve_127 4.44822 tag curve_289
+operation div curve_128 4.44822 tag curve_290
+operation div curve_129 4.44822 tag curve_291
+operation div curve_130 4.44822 tag curve_292
+operation div curve_131 4.44822 tag curve_293
+operation div curve_132 4.44822 tag curve_294
+operation div curve_133 4.44822 tag curve_295
+operation div curve_134 4.44822 tag curve_296
+operation div curve_135 4.44822 tag curve_297
+operation div curve_136 4.44822 tag curve_298
+operation div curve_137 4.44822 tag curve_299
+operation div curve_138 4.44822 tag curve_300
+operation div curve_139 4.44822 tag curve_301
+operation div curve_140 4.44822 tag curve_302
+operation div curve_141 4.44822 tag curve_303
+operation div curve_142 4.44822 tag curve_304
+operation div curve_143 4.44822 tag curve_305
+operation div curve_144 4.44822 tag curve_306
+operation div curve_145 4.44822 tag curve_307
+operation div curve_146 4.44822 tag curve_308
+operation div curve_147 4.44822 tag curve_309
+operation div curve_148 4.44822 tag curve_310
+operation div curve_149 4.44822 tag curve_311
+operation div curve_150 4.44822 tag curve_312
+operation div curve_151 4.44822 tag curve_313
+operation div curve_152 4.44822 tag curve_314
+operation div curve_153 4.44822 tag curve_315
+operation div curve_154 4.44822 tag curve_316
+operation div curve_155 4.44822 tag curve_317
+operation div curve_156 4.44822 tag curve_318
+operation div curve_157 4.44822 tag curve_319
+operation div curve_158 4.44822 tag curve_320
+operation div curve_159 4.44822 tag curve_321
+operation div curve_160 4.44822 tag curve_322
+operation div curve_161 4.44822 tag curve_323
+operation div curve_162 4.44822 tag curve_324
+#
+# Delete working curves
+#
+delete curve_1 curve_2 curve_3 curve_4 curve_5 curve_6 curve_7 curve_8 curve_9 curve_10
+delete curve_11 curve_12 curve_13 curve_14 curve_15 curve_16 curve_17 curve_18 curve_19 curve_20
+delete curve_21 curve_22 curve_23 curve_24 curve_25 curve_26 curve_27 curve_28 curve_29 curve_30
+delete curve_31 curve_32 curve_33 curve_34 curve_35 curve_36 curve_37 curve_38 curve_39 curve_40
+delete curve_41 curve_42 curve_43 curve_44 curve_45 curve_46 curve_47 curve_48 curve_49 curve_50
+delete curve_51 curve_52 curve_53 curve_54 curve_55 curve_56 curve_57 curve_58 curve_59 curve_60
+delete curve_61 curve_62 curve_63 curve_64 curve_65 curve_66 curve_67 curve_68 curve_69 curve_70
+delete curve_71 curve_72 curve_73 curve_74 curve_75 curve_76 curve_77 curve_78 curve_79 curve_80
+delete curve_81 curve_82 curve_83 curve_84 curve_85 curve_86 curve_87 curve_88 curve_89 curve_90
+delete curve_91 curve_92 curve_93 curve_94 curve_95 curve_96 curve_97 curve_98 curve_99 curve_100
+delete curve_101 curve_102 curve_103 curve_104 curve_105 curve_106 curve_107 curve_108 curve_109 curve_110
+delete curve_111 curve_112 curve_113 curve_114 curve_115 curve_116 curve_117 curve_118 curve_119 curve_120
+delete curve_121 curve_122 curve_123 curve_124 curve_125 curve_126 curve_127 curve_128 curve_129 curve_130
+delete curve_131 curve_132 curve_133 curve_134 curve_135 curve_136 curve_137 curve_138 curve_139 curve_140
+delete curve_141 curve_142 curve_143 curve_144 curve_145 curve_146 curve_147 curve_148 curve_149 curve_150
+delete curve_151 curve_152 curve_153 curve_154 curve_155 curve_156 curve_157 curve_158 curve_159 curve_160
+delete curve_161 curve_162
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default Default foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Curve labels - (modified by user)
+#
+# label curve_163  Shear force y - Beam 211 ( * 4.448216 (y))
+# label curve_164  Shear force y - Beam 212 ( * 4.448216 (y))
+# label curve_165  Shear force y - Beam 213 ( * 4.448216 (y))
+# label curve_166  Shear force y - Beam 277 ( * 4.448216 (y))
+# label curve_167  Shear force y - Beam 278 ( * 4.448216 (y))
+# label curve_168  Shear force y - Beam 279 ( * 4.448216 (y))
+# label curve_169  Shear force y - Beam 280 ( * 4.448216 (y))
+# label curve_170  Shear force y - Beam 281 ( * 4.448216 (y))
+# label curve_171  Shear force y - Beam 282 ( * 4.448216 (y))
+# label curve_172  Shear force y - Beam 283 ( * 4.448216 (y))
+# label curve_173  Shear force y - Beam 284 ( * 4.448216 (y))
+# label curve_174  Shear force y - Beam 285 ( * 4.448216 (y))
+# label curve_175  Shear force y - Beam 289 ( * 4.448216 (y))
+# label curve_176  Shear force y - Beam 290 ( * 4.448216 (y))
+# label curve_177  Shear force y - Beam 291 ( * 4.448216 (y))
+# label curve_178  Shear force y - Beam 292 ( * 4.448216 (y))
+# label curve_179  Shear force y - Beam 293 ( * 4.448216 (y))
+# label curve_180  Shear force y - Beam 294 ( * 4.448216 (y))
+# label curve_181  Shear force y - Beam 295 ( * 4.448216 (y))
+# label curve_182  Shear force y - Beam 296 ( * 4.448216 (y))
+# label curve_183  Shear force y - Beam 297 ( * 4.448216 (y))
+# label curve_184  Shear force y - Beam 298 ( * 4.448216 (y))
+# label curve_185  Shear force y - Beam 299 ( * 4.448216 (y))
+# label curve_186  Shear force y - Beam 300 ( * 4.448216 (y))
+# label curve_187  Shear force y - Beam 304 ( * 4.448216 (y))
+# label curve_188  Shear force y - Beam 305 ( * 4.448216 (y))
+# label curve_189  Shear force y - Beam 306 ( * 4.448216 (y))
+# label curve_190  Shear force y - Beam 307 ( * 4.448216 (y))
+# label curve_191  Shear force y - Beam 308 ( * 4.448216 (y))
+# label curve_192  Shear force y - Beam 309 ( * 4.448216 (y))
+# label curve_193  Shear force y - Beam 310 ( * 4.448216 (y))
+# label curve_194  Shear force y - Beam 311 ( * 4.448216 (y))
+# label curve_195  Shear force y - Beam 312 ( * 4.448216 (y))
+# label curve_196  Shear force y - Beam 313 ( * 4.448216 (y))
+# label curve_197  Shear force y - Beam 314 ( * 4.448216 (y))
+# label curve_198  Shear force y - Beam 315 ( * 4.448216 (y))
+# label curve_199  Shear force y - Beam 319 ( * 4.448216 (y))
+# label curve_200  Shear force y - Beam 320 ( * 4.448216 (y))
+# label curve_201  Shear force y - Beam 321 ( * 4.448216 (y))
+# label curve_202  Shear force y - Beam 325 ( * 4.448216 (y))
+# label curve_203  Shear force y - Beam 326 ( * 4.448216 (y))
+# label curve_204  Shear force y - Beam 327 ( * 4.448216 (y))
+# label curve_205  Shear force y - Beam 328 ( * 4.448216 (y))
+# label curve_206  Shear force y - Beam 329 ( * 4.448216 (y))
+# label curve_207  Shear force y - Beam 330 ( * 4.448216 (y))
+# label curve_208  Shear force y - Beam 331 ( * 4.448216 (y))
+# label curve_209  Shear force y - Beam 332 ( * 4.448216 (y))
+# label curve_210  Shear force y - Beam 333 ( * 4.448216 (y))
+# label curve_211  Shear force y - Beam 337 ( * 4.448216 (y))
+# label curve_212  Shear force y - Beam 338 ( * 4.448216 (y))
+# label curve_213  Shear force y - Beam 339 ( * 4.448216 (y))
+# label curve_214  Shear force y - Beam 358 ( * 4.448216 (y))
+# label curve_215  Shear force y - Beam 359 ( * 4.448216 (y))
+# label curve_216  Shear force y - Beam 360 ( * 4.448216 (y))
+# label curve_217  Shear force y - Beam 361 ( * 4.448216 (y))
+# label curve_218  Shear force y - Beam 362 ( * 4.448216 (y))
+# label curve_219  Shear force y - Beam 363 ( * 4.448216 (y))
+# label curve_220  Shear force y - Beam 364 ( * 4.448216 (y))
+# label curve_221  Shear force y - Beam 365 ( * 4.448216 (y))
+# label curve_222  Shear force y - Beam 366 ( * 4.448216 (y))
+# label curve_223  Shear force y - Beam 367 ( * 4.448216 (y))
+# label curve_224  Shear force y - Beam 368 ( * 4.448216 (y))
+# label curve_225  Shear force y - Beam 369 ( * 4.448216 (y))
+# label curve_226  Shear force y - Beam 376 ( * 4.448216 (y))
+# label curve_227  Shear force y - Beam 377 ( * 4.448216 (y))
+# label curve_228  Shear force y - Beam 379 ( * 4.448216 (y))
+# label curve_229  Shear force y - Beam 380 ( * 4.448216 (y))
+# label curve_230  Shear force y - Beam 381 ( * 4.448216 (y))
+# label curve_231  Shear force y - Beam 382 ( * 4.448216 (y))
+# label curve_232  Shear force y - Beam 383 ( * 4.448216 (y))
+# label curve_233  Shear force y - Beam 384 ( * 4.448216 (y))
+# label curve_234  Shear force y - Beam 385 ( * 4.448216 (y))
+# label curve_235  Shear force y - Beam 386 ( * 4.448216 (y))
+# label curve_236  Shear force y - Beam 387 ( * 4.448216 (y))
+# label curve_237  Shear force y - Beam 412 ( * 4.448216 (y))
+# label curve_238  Shear force y - Beam 413 ( * 4.448216 (y))
+# label curve_239  Shear force y - Beam 414 ( * 4.448216 (y))
+# label curve_240  Shear force y - Beam 415 ( * 4.448216 (y))
+# label curve_241  Shear force y - Beam 416 ( * 4.448216 (y))
+# label curve_242  Shear force y - Beam 417 ( * 4.448216 (y))
+# label curve_243  Shear force y - Beam 421 ( * 4.448216 (y))
+# label curve_244  Shear force y - Beam 422 ( * 4.448216 (y))
+# label curve_245  Shear force y - Beam 423 ( * 4.448216 (y))
+# label curve_246  Shear force y - Beam 433 ( * 4.448216 (y))
+# label curve_247  Shear force y - Beam 434 ( * 4.448216 (y))
+# label curve_248  Shear force y - Beam 435 ( * 4.448216 (y))
+# label curve_249  Shear force y - Beam 436 ( * 4.448216 (y))
+# label curve_250  Shear force y - Beam 437 ( * 4.448216 (y))
+# label curve_251  Shear force y - Beam 438 ( * 4.448216 (y))
+# label curve_252  Shear force y - Beam 445 ( * 4.448216 (y))
+# label curve_253  Shear force y - Beam 446 ( * 4.448216 (y))
+# label curve_254  Shear force y - Beam 447 ( * 4.448216 (y))
+# label curve_255  Shear force y - Beam 478 ( * 4.448216 (y))
+# label curve_256  Shear force y - Beam 480 ( * 4.448216 (y))
+# label curve_257  Shear force y - Beam 487 ( * 4.448216 (y))
+# label curve_258  Shear force y - Beam 489 ( * 4.448216 (y))
+# label curve_259  Shear force y - Beam 490 ( * 4.448216 (y))
+# label curve_260  Shear force y - Beam 492 ( * 4.448216 (y))
+# label curve_261  Shear force y - Beam 493 ( * 4.448216 (y))
+# label curve_262  Shear force y - Beam 495 ( * 4.448216 (y))
+# label curve_263  Shear force y - Beam 3341 ( * 4.448216 (y))
+# label curve_264  Shear force y - Beam 3343 ( * 4.448216 (y))
+# label curve_265  Shear force y - Beam 3346 ( * 4.448216 (y))
+# label curve_266  Shear force y - Beam 3347 ( * 4.448216 (y))
+# label curve_267  Shear force y - Beam 3349 ( * 4.448216 (y))
+# label curve_268  Shear force y - Beam 3352 ( * 4.448216 (y))
+# label curve_269  Shear force y - Beam 3353 ( * 4.448216 (y))
+# label curve_270  Shear force y - Beam 3355 ( * 4.448216 (y))
+# label curve_271  Shear force y - Beam 3358 ( * 4.448216 (y))
+# label curve_272  Shear force y - Beam 3359 ( * 4.448216 (y))
+# label curve_273  Shear force y - Beam 3361 ( * 4.448216 (y))
+# label curve_274  Shear force y - Beam 3364 ( * 4.448216 (y))
+# label curve_275  Shear force y - Beam 3365 ( * 4.448216 (y))
+# label curve_276  Shear force y - Beam 3367 ( * 4.448216 (y))
+# label curve_277  Shear force y - Beam 3370 ( * 4.448216 (y))
+# label curve_278  Shear force y - Beam 3371 ( * 4.448216 (y))
+# label curve_279  Shear force y - Beam 3373 ( * 4.448216 (y))
+# label curve_280  Shear force y - Beam 3376 ( * 4.448216 (y))
+# label curve_281  Shear force y - Beam 3377 ( * 4.448216 (y))
+# label curve_282  Shear force y - Beam 3379 ( * 4.448216 (y))
+# label curve_283  Shear force y - Beam 3382 ( * 4.448216 (y))
+# label curve_284  Shear force y - Beam 3383 ( * 4.448216 (y))
+# label curve_285  Shear force y - Beam 3385 ( * 4.448216 (y))
+# label curve_286  Shear force y - Beam 3388 ( * 4.448216 (y))
+# label curve_287  Shear force y - Beam 3389 ( * 4.448216 (y))
+# label curve_288  Shear force y - Beam 3391 ( * 4.448216 (y))
+# label curve_289  Shear force y - Beam 3394 ( * 4.448216 (y))
+# label curve_290  Shear force y - Beam 3395 ( * 4.448216 (y))
+# label curve_291  Shear force y - Beam 3397 ( * 4.448216 (y))
+# label curve_292  Shear force y - Beam 3400 ( * 4.448216 (y))
+# label curve_293  Shear force y - Beam 3401 ( * 4.448216 (y))
+# label curve_294  Shear force y - Beam 3403 ( * 4.448216 (y))
+# label curve_295  Shear force y - Beam 3406 ( * 4.448216 (y))
+# label curve_296  Shear force y - Beam 5781 ( * 4.448216 (y))
+# label curve_297  Shear force y - Beam 5997 ( * 4.448216 (y))
+# label curve_298  Shear force y - Beam 5998 ( * 4.448216 (y))
+# label curve_299  Shear force y - Beam 5999 ( * 4.448216 (y))
+# label curve_300  Shear force y - Beam 6000 ( * 4.448216 (y))
+# label curve_301  Shear force y - Beam 6001 ( * 4.448216 (y))
+# label curve_302  Shear force y - Beam 6002 ( * 4.448216 (y))
+# label curve_303  Shear force y - Beam 6003 ( * 4.448216 (y))
+# label curve_304  Shear force y - Beam 6004 ( * 4.448216 (y))
+# label curve_305  Shear force y - Beam 6005 ( * 4.448216 (y))
+# label curve_306  Shear force y - Beam 6006 ( * 4.448216 (y))
+# label curve_307  Shear force y - Beam 6007 ( * 4.448216 (y))
+# label curve_308  Shear force y - Beam 6008 ( * 4.448216 (y))
+# label curve_309  Shear force y - Beam 6009 ( * 4.448216 (y))
+# label curve_310  Shear force y - Beam 6010 ( * 4.448216 (y))
+# label curve_311  Shear force y - Beam 6011 ( * 4.448216 (y))
+# label curve_312  Shear force y - Beam 6012 ( * 4.448216 (y))
+# label curve_313  Shear force y - Beam 6034 ( * 4.448216 (y))
+# label curve_314  Shear force y - Beam 6036 ( * 4.448216 (y))
+# label curve_315  Shear force y - Beam 6037 ( * 4.448216 (y))
+# label curve_316  Shear force y - Beam 6038 ( * 4.448216 (y))
+# label curve_317  Shear force y - Beam 6039 ( * 4.448216 (y))
+# label curve_318  Shear force y - Beam 6040 ( * 4.448216 (y))
+# label curve_319  Shear force y - Beam 6042 ( * 4.448216 (y))
+# label curve_320  Shear force y - Beam 6043 ( * 4.448216 (y))
+# label curve_321  Shear force y - Beam 6044 ( * 4.448216 (y))
+# label curve_322  Shear force y - Beam 6045 ( * 4.448216 (y))
+# label curve_323  Shear force y - Beam 6046 ( * 4.448216 (y))
+# label curve_324  Shear force y - Beam 6047 ( * 4.448216 (y))
+#
+# Curve Style definitions
+#
+stylec curve_163 white,default,solid,triangle,1
+stylec curve_164 red,default,solid,square,1
+stylec curve_165 green,default,solid,diamond,1
+stylec curve_166 blue,default,solid,hourglass,1
+stylec curve_167 cyan,default,solid,cross,1
+stylec curve_168 magenta,default,solid,circle,1
+stylec curve_169 white,default,dash,star,1
+stylec curve_170 red,default,dash,dot,1
+stylec curve_171 green,default,dash,triangle,1
+stylec curve_172 blue,default,dash,square,1
+stylec curve_173 cyan,default,dash,diamond,1
+stylec curve_174 magenta,default,dash,hourglass,1
+stylec curve_175 white,default,solid,cross,1
+stylec curve_176 red,default,solid,circle,1
+stylec curve_177 green,default,solid,star,1
+stylec curve_178 blue,default,solid,dot,1
+stylec curve_179 cyan,default,solid,triangle,1
+stylec curve_180 magenta,default,solid,square,1
+stylec curve_181 white,default,dash,diamond,1
+stylec curve_182 red,default,dash,hourglass,1
+stylec curve_183 green,default,dash,cross,1
+stylec curve_184 blue,default,dash,circle,1
+stylec curve_185 cyan,default,dash,star,1
+stylec curve_186 magenta,default,dash,dot,1
+stylec curve_187 white,default,solid,triangle,1
+stylec curve_188 red,default,solid,square,1
+stylec curve_189 green,default,solid,diamond,1
+stylec curve_190 blue,default,solid,hourglass,1
+stylec curve_191 cyan,default,solid,cross,1
+stylec curve_192 magenta,default,solid,circle,1
+stylec curve_193 white,default,dash,star,1
+stylec curve_194 red,default,dash,dot,1
+stylec curve_195 green,default,dash,triangle,1
+stylec curve_196 blue,default,dash,square,1
+stylec curve_197 cyan,default,dash,diamond,1
+stylec curve_198 magenta,default,dash,hourglass,1
+stylec curve_199 white,default,solid,cross,1
+stylec curve_200 red,default,solid,circle,1
+stylec curve_201 green,default,solid,star,1
+stylec curve_202 blue,default,solid,dot,1
+stylec curve_203 cyan,default,solid,triangle,1
+stylec curve_204 magenta,default,solid,square,1
+stylec curve_205 white,default,dash,diamond,1
+stylec curve_206 red,default,dash,hourglass,1
+stylec curve_207 green,default,dash,cross,1
+stylec curve_208 blue,default,dash,circle,1
+stylec curve_209 cyan,default,dash,star,1
+stylec curve_210 magenta,default,dash,dot,1
+stylec curve_211 white,default,solid,triangle,1
+stylec curve_212 red,default,solid,square,1
+stylec curve_213 green,default,solid,diamond,1
+stylec curve_214 blue,default,solid,hourglass,1
+stylec curve_215 cyan,default,solid,cross,1
+stylec curve_216 magenta,default,solid,circle,1
+stylec curve_217 white,default,dash,star,1
+stylec curve_218 red,default,dash,dot,1
+stylec curve_219 green,default,dash,triangle,1
+stylec curve_220 blue,default,dash,square,1
+stylec curve_221 cyan,default,dash,diamond,1
+stylec curve_222 magenta,default,dash,hourglass,1
+stylec curve_223 white,default,solid,cross,1
+stylec curve_224 red,default,solid,circle,1
+stylec curve_225 green,default,solid,star,1
+stylec curve_226 blue,default,solid,dot,1
+stylec curve_227 cyan,default,solid,triangle,1
+stylec curve_228 magenta,default,solid,square,1
+stylec curve_229 white,default,dash,diamond,1
+stylec curve_230 red,default,dash,hourglass,1
+stylec curve_231 green,default,dash,cross,1
+stylec curve_232 blue,default,dash,circle,1
+stylec curve_233 cyan,default,dash,star,1
+stylec curve_234 magenta,default,dash,dot,1
+stylec curve_235 white,default,solid,triangle,1
+stylec curve_236 red,default,solid,square,1
+stylec curve_237 green,default,solid,diamond,1
+stylec curve_238 blue,default,solid,hourglass,1
+stylec curve_239 cyan,default,solid,cross,1
+stylec curve_240 magenta,default,solid,circle,1
+stylec curve_241 white,default,dash,star,1
+stylec curve_242 red,default,dash,dot,1
+stylec curve_243 green,default,dash,triangle,1
+stylec curve_244 blue,default,dash,square,1
+stylec curve_245 cyan,default,dash,diamond,1
+stylec curve_246 magenta,default,dash,hourglass,1
+stylec curve_247 white,default,solid,cross,1
+stylec curve_248 red,default,solid,circle,1
+stylec curve_249 green,default,solid,star,1
+stylec curve_250 blue,default,solid,dot,1
+stylec curve_251 cyan,default,solid,triangle,1
+stylec curve_252 magenta,default,solid,square,1
+stylec curve_253 white,default,dash,diamond,1
+stylec curve_254 red,default,dash,hourglass,1
+stylec curve_255 green,default,dash,cross,1
+stylec curve_256 blue,default,dash,circle,1
+stylec curve_257 cyan,default,dash,star,1
+stylec curve_258 magenta,default,dash,dot,1
+stylec curve_259 white,default,solid,triangle,1
+stylec curve_260 red,default,solid,square,1
+stylec curve_261 green,default,solid,diamond,1
+stylec curve_262 blue,default,solid,hourglass,1
+stylec curve_263 cyan,default,solid,cross,1
+stylec curve_264 magenta,default,solid,circle,1
+stylec curve_265 white,default,dash,star,1
+stylec curve_266 red,default,dash,dot,1
+stylec curve_267 green,default,dash,triangle,1
+stylec curve_268 blue,default,dash,square,1
+stylec curve_269 cyan,default,dash,diamond,1
+stylec curve_270 magenta,default,dash,hourglass,1
+stylec curve_271 white,default,solid,cross,1
+stylec curve_272 red,default,solid,circle,1
+stylec curve_273 green,default,solid,star,1
+stylec curve_274 blue,default,solid,dot,1
+stylec curve_275 cyan,default,solid,triangle,1
+stylec curve_276 magenta,default,solid,square,1
+stylec curve_277 white,default,dash,diamond,1
+stylec curve_278 red,default,dash,hourglass,1
+stylec curve_279 green,default,dash,cross,1
+stylec curve_280 blue,default,dash,circle,1
+stylec curve_281 cyan,default,dash,star,1
+stylec curve_282 magenta,default,dash,dot,1
+stylec curve_283 white,default,solid,triangle,1
+stylec curve_284 red,default,solid,square,1
+stylec curve_285 green,default,solid,diamond,1
+stylec curve_286 blue,default,solid,hourglass,1
+stylec curve_287 cyan,default,solid,cross,1
+stylec curve_288 magenta,default,solid,circle,1
+stylec curve_289 white,default,dash,star,1
+stylec curve_290 red,default,dash,dot,1
+stylec curve_291 green,default,dash,triangle,1
+stylec curve_292 blue,default,dash,square,1
+stylec curve_293 cyan,default,dash,diamond,1
+stylec curve_294 magenta,default,dash,hourglass,1
+stylec curve_295 white,default,solid,cross,1
+stylec curve_296 red,default,solid,circle,1
+stylec curve_297 green,default,solid,star,1
+stylec curve_298 blue,default,solid,dot,1
+stylec curve_299 cyan,default,solid,triangle,1
+stylec curve_300 magenta,default,solid,square,1
+stylec curve_301 white,default,dash,diamond,1
+stylec curve_302 red,default,dash,hourglass,1
+stylec curve_303 green,default,dash,cross,1
+stylec curve_304 blue,default,dash,circle,1
+stylec curve_305 cyan,default,dash,star,1
+stylec curve_306 magenta,default,dash,dot,1
+stylec curve_307 white,default,solid,triangle,1
+stylec curve_308 red,default,solid,square,1
+stylec curve_309 green,default,solid,diamond,1
+stylec curve_310 blue,default,solid,hourglass,1
+stylec curve_311 cyan,default,solid,cross,1
+stylec curve_312 magenta,default,solid,circle,1
+stylec curve_313 white,default,dash,star,1
+stylec curve_314 red,default,dash,dot,1
+stylec curve_315 green,default,dash,triangle,1
+stylec curve_316 blue,default,dash,square,1
+stylec curve_317 cyan,default,dash,diamond,1
+stylec curve_318 magenta,default,dash,hourglass,1
+stylec curve_319 white,default,solid,cross,1
+stylec curve_320 red,default,solid,circle,1
+stylec curve_321 green,default,solid,star,1
+stylec curve_322 blue,default,solid,dot,1
+stylec curve_323 cyan,default,solid,triangle,1
+stylec curve_324 magenta,default,solid,square,1
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        Title "Shear Force Y in Columns" \
+        title_on \
+        x_label auto \
+        x_label on \
+        x_unit "seconds" \
+        x_unit manual \
+        x_unit on \
+        y_label auto \
+        y_label on \
+        y_unit "kips" \
+        y_unit manual \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min auto\
+        y2_max auto\
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid normal \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default Default foreground \
+        font xlabel Default Default foreground \
+        font ylabel Default Default foreground \
+        font y2label Default Default foreground \
+        font legend Default Default foreground \
+        font xunit Default Default foreground \
+        font yunit Default Default foreground \
+        font y2unit Default Default foreground
+#
+# User lines setup
+#
+#
+# Unblank curves in graph and set up axis labels and title
+#
+display curve_163 curve_164 curve_165 curve_166 curve_167 curve_168 curve_169 curve_170 curve_171 curve_172 curve_173 curve_174 curve_175 curve_176 curve_177 curve_178 curve_179 curve_180 curve_181 curve_182 curve_183
+display_add curve_184 curve_185 curve_186 curve_187 curve_188 curve_189 curve_190 curve_191 curve_192 curve_193 curve_194 curve_195 curve_196 curve_197 curve_198 curve_199 curve_200 curve_201 curve_202 curve_203
+display_add curve_204 curve_205 curve_206 curve_207 curve_208 curve_209 curve_210 curve_211 curve_212 curve_213 curve_214 curve_215 curve_216 curve_217 curve_218 curve_219 curve_220 curve_221 curve_222 curve_223
+display_add curve_224 curve_225 curve_226 curve_227 curve_228 curve_229 curve_230 curve_231 curve_232 curve_233 curve_234 curve_235 curve_236 curve_237 curve_238 curve_239 curve_240 curve_241 curve_242 curve_243
+display_add curve_244 curve_245 curve_246 curve_247 curve_248 curve_249 curve_250 curve_251 curve_252 curve_253 curve_254 curve_255 curve_256 curve_257 curve_258 curve_259 curve_260 curve_261 curve_262 curve_263
+display_add curve_264 curve_265 curve_266 curve_267 curve_268 curve_269 curve_270 curve_271 curve_272 curve_273 curve_274 curve_275 curve_276 curve_277 curve_278 curve_279 curve_280 curve_281 curve_282 curve_283
+display_add curve_284 curve_285 curve_286 curve_287 curve_288 curve_289 curve_290 curve_291 curve_292 curve_293 curve_294 curve_295 curve_296 curve_297 curve_298 curve_299 curve_300 curve_301 curve_302 curve_303
+display_add curve_304 curve_305 curve_306 curve_307 curve_308 curve_309 curve_310 curve_311 curve_312 curve_313 curve_314 curve_315 curve_316 curve_317 curve_318 curve_319 curve_320 curve_321 curve_322 curve_323
+display_add curve_324
+#
+# User defined model prefix
+#
+prefix model  1 M1
+#
+# Set all graphs active
+#
+layout graph select all
+#
+tab ColumnsShearY.txt curve_* max maximum y value {label}
+#
+taba ColumnsShearY.txt curve_* min minimum y value {label}
+#
+csv2 columnsShearY.csv curve_* auto

@@ -1,0 +1,846 @@
+# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to multiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+# Job file:  "Z:\LS_Dyna_runs5\SCVMC\r047_hs\REC02LS.ptf"
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page wide
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.08 1.00,0.40
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format automatic
+layout graph 1 x-axis precision 3
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 3
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+# User Defined Colours
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+beam 6091 normal x tag curve_1
+beam 6092 normal x tag curve_2
+beam 6093 normal x tag curve_3
+beam 6094 normal x tag curve_4
+beam 6095 normal x tag curve_5
+beam 6096 normal x tag curve_6
+beam 6097 normal x tag curve_7
+beam 6098 normal x tag curve_8
+beam 6099 normal x tag curve_9
+beam 6100 normal x tag curve_10
+beam 6101 normal x tag curve_11
+beam 6102 normal x tag curve_12
+beam 6103 normal x tag curve_13
+beam 6104 normal x tag curve_14
+beam 6105 normal x tag curve_15
+beam 6106 normal x tag curve_16
+beam 6107 normal x tag curve_17
+beam 6108 normal x tag curve_18
+beam 6109 normal x tag curve_19
+beam 6110 normal x tag curve_20
+beam 6112 normal x tag curve_21
+beam 6113 normal x tag curve_22
+beam 6114 normal x tag curve_23
+beam 6115 normal x tag curve_24
+beam 6116 normal x tag curve_25
+beam 6117 normal x tag curve_26
+beam 6118 normal x tag curve_27
+beam 6119 normal x tag curve_28
+beam 6120 normal x tag curve_29
+beam 6121 normal x tag curve_30
+beam 6122 normal x tag curve_31
+beam 6123 normal x tag curve_32
+beam 6124 normal x tag curve_33
+beam 6125 normal x tag curve_34
+beam 6126 normal x tag curve_35
+beam 6127 normal x tag curve_36
+beam 6128 normal x tag curve_37
+beam 6129 normal x tag curve_38
+beam 6130 normal x tag curve_39
+beam 6131 normal x tag curve_40
+beam 6091 moment y tag curve_41
+beam 6092 moment y tag curve_42
+beam 6093 moment y tag curve_43
+beam 6094 moment y tag curve_44
+beam 6095 moment y tag curve_45
+beam 6096 moment y tag curve_46
+beam 6097 moment y tag curve_47
+beam 6098 moment y tag curve_48
+beam 6099 moment y tag curve_49
+beam 6100 moment y tag curve_50
+beam 6101 moment y tag curve_51
+beam 6102 moment y tag curve_52
+beam 6103 moment y tag curve_53
+beam 6104 moment y tag curve_54
+beam 6105 moment y tag curve_55
+beam 6106 moment y tag curve_56
+beam 6107 moment y tag curve_57
+beam 6108 moment y tag curve_58
+beam 6109 moment y tag curve_59
+beam 6110 moment y tag curve_60
+beam 6112 moment y tag curve_61
+beam 6113 moment y tag curve_62
+beam 6114 moment y tag curve_63
+beam 6115 moment y tag curve_64
+beam 6116 moment y tag curve_65
+beam 6117 moment y tag curve_66
+beam 6118 moment y tag curve_67
+beam 6119 moment y tag curve_68
+beam 6120 moment y tag curve_69
+beam 6121 moment y tag curve_70
+beam 6122 moment y tag curve_71
+beam 6123 moment y tag curve_72
+beam 6124 moment y tag curve_73
+beam 6125 moment y tag curve_74
+beam 6126 moment y tag curve_75
+beam 6127 moment y tag curve_76
+beam 6128 moment y tag curve_77
+beam 6129 moment y tag curve_78
+beam 6130 moment y tag curve_79
+beam 6131 moment y tag curve_80
+beam 6091 moment z tag curve_81
+beam 6092 moment z tag curve_82
+beam 6093 moment z tag curve_83
+beam 6094 moment z tag curve_84
+beam 6095 moment z tag curve_85
+beam 6096 moment z tag curve_86
+beam 6097 moment z tag curve_87
+beam 6098 moment z tag curve_88
+beam 6099 moment z tag curve_89
+beam 6100 moment z tag curve_90
+beam 6101 moment z tag curve_91
+beam 6102 moment z tag curve_92
+beam 6103 moment z tag curve_93
+beam 6104 moment z tag curve_94
+beam 6105 moment z tag curve_95
+beam 6106 moment z tag curve_96
+beam 6107 moment z tag curve_97
+beam 6108 moment z tag curve_98
+beam 6109 moment z tag curve_99
+beam 6110 moment z tag curve_100
+beam 6112 moment z tag curve_101
+beam 6113 moment z tag curve_102
+beam 6114 moment z tag curve_103
+beam 6115 moment z tag curve_104
+beam 6116 moment z tag curve_105
+beam 6117 moment z tag curve_106
+beam 6118 moment z tag curve_107
+beam 6119 moment z tag curve_108
+beam 6120 moment z tag curve_109
+beam 6121 moment z tag curve_110
+beam 6122 moment z tag curve_111
+beam 6123 moment z tag curve_112
+beam 6124 moment z tag curve_113
+beam 6125 moment z tag curve_114
+beam 6126 moment z tag curve_115
+beam 6127 moment z tag curve_116
+beam 6128 moment z tag curve_117
+beam 6129 moment z tag curve_118
+beam 6130 moment z tag curve_119
+beam 6131 moment z tag curve_120
+beam 6091 moment x tag curve_121
+beam 6092 moment x tag curve_122
+beam 6093 moment x tag curve_123
+beam 6094 moment x tag curve_124
+beam 6095 moment x tag curve_125
+beam 6096 moment x tag curve_126
+beam 6097 moment x tag curve_127
+beam 6098 moment x tag curve_128
+beam 6099 moment x tag curve_129
+beam 6100 moment x tag curve_130
+beam 6101 moment x tag curve_131
+beam 6102 moment x tag curve_132
+beam 6103 moment x tag curve_133
+beam 6104 moment x tag curve_134
+beam 6105 moment x tag curve_135
+beam 6106 moment x tag curve_136
+beam 6107 moment x tag curve_137
+beam 6108 moment x tag curve_138
+beam 6109 moment x tag curve_139
+beam 6110 moment x tag curve_140
+beam 6112 moment x tag curve_141
+beam 6113 moment x tag curve_142
+beam 6114 moment x tag curve_143
+beam 6115 moment x tag curve_144
+beam 6116 moment x tag curve_145
+beam 6117 moment x tag curve_146
+beam 6118 moment x tag curve_147
+beam 6119 moment x tag curve_148
+beam 6120 moment x tag curve_149
+beam 6121 moment x tag curve_150
+beam 6122 moment x tag curve_151
+beam 6123 moment x tag curve_152
+beam 6124 moment x tag curve_153
+beam 6125 moment x tag curve_154
+beam 6126 moment x tag curve_155
+beam 6127 moment x tag curve_156
+beam 6128 moment x tag curve_157
+beam 6129 moment x tag curve_158
+beam 6130 moment x tag curve_159
+beam 6131 moment x tag curve_160
+#
+# Operations for unblanked curves
+#
+operation div curve_1 4.44822 tag curve_161
+operation div curve_2 4.44822 tag curve_162
+operation div curve_3 4.44822 tag curve_163
+operation div curve_4 4.44822 tag curve_164
+operation div curve_5 4.44822 tag curve_165
+operation div curve_6 4.44822 tag curve_166
+operation div curve_7 4.44822 tag curve_167
+operation div curve_8 4.44822 tag curve_168
+operation div curve_9 4.44822 tag curve_169
+operation div curve_10 4.44822 tag curve_170
+operation div curve_11 4.44822 tag curve_171
+operation div curve_12 4.44822 tag curve_172
+operation div curve_13 4.44822 tag curve_173
+operation div curve_14 4.44822 tag curve_174
+operation div curve_15 4.44822 tag curve_175
+operation div curve_16 4.44822 tag curve_176
+operation div curve_17 4.44822 tag curve_177
+operation div curve_18 4.44822 tag curve_178
+operation div curve_19 4.44822 tag curve_179
+operation div curve_20 4.44822 tag curve_180
+operation div curve_21 4.44822 tag curve_181
+operation div curve_22 4.44822 tag curve_182
+operation div curve_23 4.44822 tag curve_183
+operation div curve_24 4.44822 tag curve_184
+operation div curve_25 4.44822 tag curve_185
+operation div curve_26 4.44822 tag curve_186
+operation div curve_27 4.44822 tag curve_187
+operation div curve_28 4.44822 tag curve_188
+operation div curve_29 4.44822 tag curve_189
+operation div curve_30 4.44822 tag curve_190
+operation div curve_31 4.44822 tag curve_191
+operation div curve_32 4.44822 tag curve_192
+operation div curve_33 4.44822 tag curve_193
+operation div curve_34 4.44822 tag curve_194
+operation div curve_35 4.44822 tag curve_195
+operation div curve_36 4.44822 tag curve_196
+operation div curve_37 4.44822 tag curve_197
+operation div curve_38 4.44822 tag curve_198
+operation div curve_39 4.44822 tag curve_199
+operation div curve_40 4.44822 tag curve_200
+operation mul curve_41 0.7375 tag curve_201
+operation mul curve_42 0.7375 tag curve_202
+operation mul curve_43 0.7375 tag curve_203
+operation mul curve_44 0.7375 tag curve_204
+operation mul curve_45 0.7375 tag curve_205
+operation mul curve_46 0.7375 tag curve_206
+operation mul curve_47 0.7375 tag curve_207
+operation mul curve_48 0.7375 tag curve_208
+operation mul curve_49 0.7375 tag curve_209
+operation mul curve_50 0.7375 tag curve_210
+operation mul curve_51 0.7375 tag curve_211
+operation mul curve_52 0.7375 tag curve_212
+operation mul curve_53 0.7375 tag curve_213
+operation mul curve_54 0.7375 tag curve_214
+operation mul curve_55 0.7375 tag curve_215
+operation mul curve_56 0.7375 tag curve_216
+operation mul curve_57 0.7375 tag curve_217
+operation mul curve_58 0.7375 tag curve_218
+operation mul curve_59 0.7375 tag curve_219
+operation mul curve_60 0.7375 tag curve_220
+operation mul curve_61 0.7375 tag curve_221
+operation mul curve_62 0.7375 tag curve_222
+operation mul curve_63 0.7375 tag curve_223
+operation mul curve_64 0.7375 tag curve_224
+operation mul curve_65 0.7375 tag curve_225
+operation mul curve_66 0.7375 tag curve_226
+operation mul curve_67 0.7375 tag curve_227
+operation mul curve_68 0.7375 tag curve_228
+operation mul curve_69 0.7375 tag curve_229
+operation mul curve_70 0.7375 tag curve_230
+operation mul curve_71 0.7375 tag curve_231
+operation mul curve_72 0.7375 tag curve_232
+operation mul curve_73 0.7375 tag curve_233
+operation mul curve_74 0.7375 tag curve_234
+operation mul curve_75 0.7375 tag curve_235
+operation mul curve_76 0.7375 tag curve_236
+operation mul curve_77 0.7375 tag curve_237
+operation mul curve_78 0.7375 tag curve_238
+operation mul curve_79 0.7375 tag curve_239
+operation mul curve_80 0.7375 tag curve_240
+operation mul curve_81 0.7375 tag curve_241
+operation mul curve_82 0.7375 tag curve_242
+operation mul curve_83 0.7375 tag curve_243
+operation mul curve_84 0.7375 tag curve_244
+operation mul curve_85 0.7375 tag curve_245
+operation mul curve_86 0.7375 tag curve_246
+operation mul curve_87 0.7375 tag curve_247
+operation mul curve_88 0.7375 tag curve_248
+operation mul curve_89 0.7375 tag curve_249
+operation mul curve_90 0.7375 tag curve_250
+operation mul curve_91 0.7375 tag curve_251
+operation mul curve_92 0.7375 tag curve_252
+operation mul curve_93 0.7375 tag curve_253
+operation mul curve_94 0.7375 tag curve_254
+operation mul curve_95 0.7375 tag curve_255
+operation mul curve_96 0.7375 tag curve_256
+operation mul curve_97 0.7375 tag curve_257
+operation mul curve_98 0.7375 tag curve_258
+operation mul curve_99 0.7375 tag curve_259
+operation mul curve_100 0.7375 tag curve_260
+operation mul curve_101 0.7375 tag curve_261
+operation mul curve_102 0.7375 tag curve_262
+operation mul curve_103 0.7375 tag curve_263
+operation mul curve_104 0.7375 tag curve_264
+operation mul curve_105 0.7375 tag curve_265
+operation mul curve_106 0.7375 tag curve_266
+operation mul curve_107 0.7375 tag curve_267
+operation mul curve_108 0.7375 tag curve_268
+operation mul curve_109 0.7375 tag curve_269
+operation mul curve_110 0.7375 tag curve_270
+operation mul curve_111 0.7375 tag curve_271
+operation mul curve_112 0.7375 tag curve_272
+operation mul curve_113 0.7375 tag curve_273
+operation mul curve_114 0.7375 tag curve_274
+operation mul curve_115 0.7375 tag curve_275
+operation mul curve_116 0.7375 tag curve_276
+operation mul curve_117 0.7375 tag curve_277
+operation mul curve_118 0.7375 tag curve_278
+operation mul curve_119 0.7375 tag curve_279
+operation mul curve_120 0.7375 tag curve_280
+operation mul curve_121 0.7375 tag curve_281
+operation mul curve_122 0.7375 tag curve_282
+operation mul curve_123 0.7375 tag curve_283
+operation mul curve_124 0.7375 tag curve_284
+operation mul curve_125 0.7375 tag curve_285
+operation mul curve_126 0.7375 tag curve_286
+operation mul curve_127 0.7375 tag curve_287
+operation mul curve_128 0.7375 tag curve_288
+operation mul curve_129 0.7375 tag curve_289
+operation mul curve_130 0.7375 tag curve_290
+operation mul curve_131 0.7375 tag curve_291
+operation mul curve_132 0.7375 tag curve_292
+operation mul curve_133 0.7375 tag curve_293
+operation mul curve_134 0.7375 tag curve_294
+operation mul curve_135 0.7375 tag curve_295
+operation mul curve_136 0.7375 tag curve_296
+operation mul curve_137 0.7375 tag curve_297
+operation mul curve_138 0.7375 tag curve_298
+operation mul curve_139 0.7375 tag curve_299
+operation mul curve_140 0.7375 tag curve_300
+operation mul curve_141 0.7375 tag curve_301
+operation mul curve_142 0.7375 tag curve_302
+operation mul curve_143 0.7375 tag curve_303
+operation mul curve_144 0.7375 tag curve_304
+operation mul curve_145 0.7375 tag curve_305
+operation mul curve_146 0.7375 tag curve_306
+operation mul curve_147 0.7375 tag curve_307
+operation mul curve_148 0.7375 tag curve_308
+operation mul curve_149 0.7375 tag curve_309
+operation mul curve_150 0.7375 tag curve_310
+operation mul curve_151 0.7375 tag curve_311
+operation mul curve_152 0.7375 tag curve_312
+operation mul curve_153 0.7375 tag curve_313
+operation mul curve_154 0.7375 tag curve_314
+operation mul curve_155 0.7375 tag curve_315
+operation mul curve_156 0.7375 tag curve_316
+operation mul curve_157 0.7375 tag curve_317
+operation mul curve_158 0.7375 tag curve_318
+operation mul curve_159 0.7375 tag curve_319
+operation mul curve_160 0.7375 tag curve_320
+#
+# Delete working curves
+#
+delete curve_1 curve_2 curve_3 curve_4 curve_5 curve_6 curve_7 curve_8 curve_9 curve_10
+delete curve_11 curve_12 curve_13 curve_14 curve_15 curve_16 curve_17 curve_18 curve_19 curve_20
+delete curve_21 curve_22 curve_23 curve_24 curve_25 curve_26 curve_27 curve_28 curve_29 curve_30
+delete curve_31 curve_32 curve_33 curve_34 curve_35 curve_36 curve_37 curve_38 curve_39 curve_40
+delete curve_41 curve_42 curve_43 curve_44 curve_45 curve_46 curve_47 curve_48 curve_49 curve_50
+delete curve_51 curve_52 curve_53 curve_54 curve_55 curve_56 curve_57 curve_58 curve_59 curve_60
+delete curve_61 curve_62 curve_63 curve_64 curve_65 curve_66 curve_67 curve_68 curve_69 curve_70
+delete curve_71 curve_72 curve_73 curve_74 curve_75 curve_76 curve_77 curve_78 curve_79 curve_80
+delete curve_81 curve_82 curve_83 curve_84 curve_85 curve_86 curve_87 curve_88 curve_89 curve_90
+delete curve_91 curve_92 curve_93 curve_94 curve_95 curve_96 curve_97 curve_98 curve_99 curve_100
+delete curve_101 curve_102 curve_103 curve_104 curve_105 curve_106 curve_107 curve_108 curve_109 curve_110
+delete curve_111 curve_112 curve_113 curve_114 curve_115 curve_116 curve_117 curve_118 curve_119 curve_120
+delete curve_121 curve_122 curve_123 curve_124 curve_125 curve_126 curve_127 curve_128 curve_129 curve_130
+delete curve_131 curve_132 curve_133 curve_134 curve_135 curve_136 curve_137 curve_138 curve_139 curve_140
+delete curve_141 curve_142 curve_143 curve_144 curve_145 curve_146 curve_147 curve_148 curve_149 curve_150
+delete curve_151 curve_152 curve_153 curve_154 curve_155 curve_156 curve_157 curve_158 curve_159 curve_160
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default Default foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Curve labels - (modified by user)
+#
+# label curve_161  Axial Force - Beam 6091 ( / 4.448222 (y))
+# label curve_162  Axial Force - Beam 6092 ( / 4.448222 (y))
+# label curve_163  Axial Force - Beam 6093 ( / 4.448222 (y))
+# label curve_164  Axial Force - Beam 6094 ( / 4.448222 (y))
+# label curve_165  Axial Force - Beam 6095 ( / 4.448222 (y))
+# label curve_166  Axial Force - Beam 6096 ( / 4.448222 (y))
+# label curve_167  Axial Force - Beam 6097 ( / 4.448222 (y))
+# label curve_168  Axial Force - Beam 6098 ( / 4.448222 (y))
+# label curve_169  Axial Force - Beam 6099 ( / 4.448222 (y))
+# label curve_170  Axial Force - Beam 6100 ( / 4.448222 (y))
+# label curve_171  Axial Force - Beam 6101 ( / 4.448222 (y))
+# label curve_172  Axial Force - Beam 6102 ( / 4.448222 (y))
+# label curve_173  Axial Force - Beam 6103 ( / 4.448222 (y))
+# label curve_174  Axial Force - Beam 6104 ( / 4.448222 (y))
+# label curve_175  Axial Force - Beam 6105 ( / 4.448222 (y))
+# label curve_176  Axial Force - Beam 6106 ( / 4.448222 (y))
+# label curve_177  Axial Force - Beam 6107 ( / 4.448222 (y))
+# label curve_178  Axial Force - Beam 6108 ( / 4.448222 (y))
+# label curve_179  Axial Force - Beam 6109 ( / 4.448222 (y))
+# label curve_180  Axial Force - Beam 6110 ( / 4.448222 (y))
+# label curve_181  Axial Force - Beam 6112 ( / 4.448222 (y))
+# label curve_182  Axial Force - Beam 6113 ( / 4.448222 (y))
+# label curve_183  Axial Force - Beam 6114 ( / 4.448222 (y))
+# label curve_184  Axial Force - Beam 6115 ( / 4.448222 (y))
+# label curve_185  Axial Force - Beam 6116 ( / 4.448222 (y))
+# label curve_186  Axial Force - Beam 6117 ( / 4.448222 (y))
+# label curve_187  Axial Force - Beam 6118 ( / 4.448222 (y))
+# label curve_188  Axial Force - Beam 6119 ( / 4.448222 (y))
+# label curve_189  Axial Force - Beam 6120 ( / 4.448222 (y))
+# label curve_190  Axial Force - Beam 6121 ( / 4.448222 (y))
+# label curve_191  Axial Force - Beam 6122 ( / 4.448222 (y))
+# label curve_192  Axial Force - Beam 6123 ( / 4.448222 (y))
+# label curve_193  Axial Force - Beam 6124 ( / 4.448222 (y))
+# label curve_194  Axial Force - Beam 6125 ( / 4.448222 (y))
+# label curve_195  Axial Force - Beam 6126 ( / 4.448222 (y))
+# label curve_196  Axial Force - Beam 6127 ( / 4.448222 (y))
+# label curve_197  Axial Force - Beam 6128 ( / 4.448222 (y))
+# label curve_198  Axial Force - Beam 6129 ( / 4.448222 (y))
+# label curve_199  Axial Force - Beam 6130 ( / 4.448222 (y))
+# label curve_200  Axial Force - Beam 6131 ( / 4.448222 (y))
+# label curve_201  Moment y - Beam 6091 ( * 0.7375 (y))
+# label curve_202  Moment y - Beam 6092 ( * 0.7375 (y))
+# label curve_203  Moment y - Beam 6093 ( * 0.7375 (y))
+# label curve_204  Moment y - Beam 6094 ( * 0.7375 (y))
+# label curve_205  Moment y - Beam 6095 ( * 0.7375 (y))
+# label curve_206  Moment y - Beam 6096 ( * 0.7375 (y))
+# label curve_207  Moment y - Beam 6097 ( * 0.7375 (y))
+# label curve_208  Moment y - Beam 6098 ( * 0.7375 (y))
+# label curve_209  Moment y - Beam 6099 ( * 0.7375 (y))
+# label curve_210  Moment y - Beam 6100 ( * 0.7375 (y))
+# label curve_211  Moment y - Beam 6101 ( * 0.7375 (y))
+# label curve_212  Moment y - Beam 6102 ( * 0.7375 (y))
+# label curve_213  Moment y - Beam 6103 ( * 0.7375 (y))
+# label curve_214  Moment y - Beam 6104 ( * 0.7375 (y))
+# label curve_215  Moment y - Beam 6105 ( * 0.7375 (y))
+# label curve_216  Moment y - Beam 6106 ( * 0.7375 (y))
+# label curve_217  Moment y - Beam 6107 ( * 0.7375 (y))
+# label curve_218  Moment y - Beam 6108 ( * 0.7375 (y))
+# label curve_219  Moment y - Beam 6109 ( * 0.7375 (y))
+# label curve_220  Moment y - Beam 6110 ( * 0.7375 (y))
+# label curve_221  Moment y - Beam 6112 ( * 0.7375 (y))
+# label curve_222  Moment y - Beam 6113 ( * 0.7375 (y))
+# label curve_223  Moment y - Beam 6114 ( * 0.7375 (y))
+# label curve_224  Moment y - Beam 6115 ( * 0.7375 (y))
+# label curve_225  Moment y - Beam 6116 ( * 0.7375 (y))
+# label curve_226  Moment y - Beam 6117 ( * 0.7375 (y))
+# label curve_227  Moment y - Beam 6118 ( * 0.7375 (y))
+# label curve_228  Moment y - Beam 6119 ( * 0.7375 (y))
+# label curve_229  Moment y - Beam 6120 ( * 0.7375 (y))
+# label curve_230  Moment y - Beam 6121 ( * 0.7375 (y))
+# label curve_231  Moment y - Beam 6122 ( * 0.7375 (y))
+# label curve_232  Moment y - Beam 6123 ( * 0.7375 (y))
+# label curve_233  Moment y - Beam 6124 ( * 0.7375 (y))
+# label curve_234  Moment y - Beam 6125 ( * 0.7375 (y))
+# label curve_235  Moment y - Beam 6126 ( * 0.7375 (y))
+# label curve_236  Moment y - Beam 6127 ( * 0.7375 (y))
+# label curve_237  Moment y - Beam 6128 ( * 0.7375 (y))
+# label curve_238  Moment y - Beam 6129 ( * 0.7375 (y))
+# label curve_239  Moment y - Beam 6130 ( * 0.7375 (y))
+# label curve_240  Moment y - Beam 6131 ( * 0.7375 (y))
+# label curve_241  Moment z - Beam 6091 ( * 0.7375 (y))
+# label curve_242  Moment z - Beam 6092 ( * 0.7375 (y))
+# label curve_243  Moment z - Beam 6093 ( * 0.7375 (y))
+# label curve_244  Moment z - Beam 6094 ( * 0.7375 (y))
+# label curve_245  Moment z - Beam 6095 ( * 0.7375 (y))
+# label curve_246  Moment z - Beam 6096 ( * 0.7375 (y))
+# label curve_247  Moment z - Beam 6097 ( * 0.7375 (y))
+# label curve_248  Moment z - Beam 6098 ( * 0.7375 (y))
+# label curve_249  Moment z - Beam 6099 ( * 0.7375 (y))
+# label curve_250  Moment z - Beam 6100 ( * 0.7375 (y))
+# label curve_251  Moment z - Beam 6101 ( * 0.7375 (y))
+# label curve_252  Moment z - Beam 6102 ( * 0.7375 (y))
+# label curve_253  Moment z - Beam 6103 ( * 0.7375 (y))
+# label curve_254  Moment z - Beam 6104 ( * 0.7375 (y))
+# label curve_255  Moment z - Beam 6105 ( * 0.7375 (y))
+# label curve_256  Moment z - Beam 6106 ( * 0.7375 (y))
+# label curve_257  Moment z - Beam 6107 ( * 0.7375 (y))
+# label curve_258  Moment z - Beam 6108 ( * 0.7375 (y))
+# label curve_259  Moment z - Beam 6109 ( * 0.7375 (y))
+# label curve_260  Moment z - Beam 6110 ( * 0.7375 (y))
+# label curve_261  Moment z - Beam 6112 ( * 0.7375 (y))
+# label curve_262  Moment z - Beam 6113 ( * 0.7375 (y))
+# label curve_263  Moment z - Beam 6114 ( * 0.7375 (y))
+# label curve_264  Moment z - Beam 6115 ( * 0.7375 (y))
+# label curve_265  Moment z - Beam 6116 ( * 0.7375 (y))
+# label curve_266  Moment z - Beam 6117 ( * 0.7375 (y))
+# label curve_267  Moment z - Beam 6118 ( * 0.7375 (y))
+# label curve_268  Moment z - Beam 6119 ( * 0.7375 (y))
+# label curve_269  Moment z - Beam 6120 ( * 0.7375 (y))
+# label curve_270  Moment z - Beam 6121 ( * 0.7375 (y))
+# label curve_271  Moment z - Beam 6122 ( * 0.7375 (y))
+# label curve_272  Moment z - Beam 6123 ( * 0.7375 (y))
+# label curve_273  Moment z - Beam 6124 ( * 0.7375 (y))
+# label curve_274  Moment z - Beam 6125 ( * 0.7375 (y))
+# label curve_275  Moment z - Beam 6126 ( * 0.7375 (y))
+# label curve_276  Moment z - Beam 6127 ( * 0.7375 (y))
+# label curve_277  Moment z - Beam 6128 ( * 0.7375 (y))
+# label curve_278  Moment z - Beam 6129 ( * 0.7375 (y))
+# label curve_279  Moment z - Beam 6130 ( * 0.7375 (y))
+# label curve_280  Moment z - Beam 6131 ( * 0.7375 (y))
+# label curve_281  Torsional moment - Beam 6091 ( * 0.7375 (y))
+# label curve_282  Torsional moment - Beam 6092 ( * 0.7375 (y))
+# label curve_283  Torsional moment - Beam 6093 ( * 0.7375 (y))
+# label curve_284  Torsional moment - Beam 6094 ( * 0.7375 (y))
+# label curve_285  Torsional moment - Beam 6095 ( * 0.7375 (y))
+# label curve_286  Torsional moment - Beam 6096 ( * 0.7375 (y))
+# label curve_287  Torsional moment - Beam 6097 ( * 0.7375 (y))
+# label curve_288  Torsional moment - Beam 6098 ( * 0.7375 (y))
+# label curve_289  Torsional moment - Beam 6099 ( * 0.7375 (y))
+# label curve_290  Torsional moment - Beam 6100 ( * 0.7375 (y))
+# label curve_291  Torsional moment - Beam 6101 ( * 0.7375 (y))
+# label curve_292  Torsional moment - Beam 6102 ( * 0.7375 (y))
+# label curve_293  Torsional moment - Beam 6103 ( * 0.7375 (y))
+# label curve_294  Torsional moment - Beam 6104 ( * 0.7375 (y))
+# label curve_295  Torsional moment - Beam 6105 ( * 0.7375 (y))
+# label curve_296  Torsional moment - Beam 6106 ( * 0.7375 (y))
+# label curve_297  Torsional moment - Beam 6107 ( * 0.7375 (y))
+# label curve_298  Torsional moment - Beam 6108 ( * 0.7375 (y))
+# label curve_299  Torsional moment - Beam 6109 ( * 0.7375 (y))
+# label curve_300  Torsional moment - Beam 6110 ( * 0.7375 (y))
+# label curve_301  Torsional moment - Beam 6112 ( * 0.7375 (y))
+# label curve_302  Torsional moment - Beam 6113 ( * 0.7375 (y))
+# label curve_303  Torsional moment - Beam 6114 ( * 0.7375 (y))
+# label curve_304  Torsional moment - Beam 6115 ( * 0.7375 (y))
+# label curve_305  Torsional moment - Beam 6116 ( * 0.7375 (y))
+# label curve_306  Torsional moment - Beam 6117 ( * 0.7375 (y))
+# label curve_307  Torsional moment - Beam 6118 ( * 0.7375 (y))
+# label curve_308  Torsional moment - Beam 6119 ( * 0.7375 (y))
+# label curve_309  Torsional moment - Beam 6120 ( * 0.7375 (y))
+# label curve_310  Torsional moment - Beam 6121 ( * 0.7375 (y))
+# label curve_311  Torsional moment - Beam 6122 ( * 0.7375 (y))
+# label curve_312  Torsional moment - Beam 6123 ( * 0.7375 (y))
+# label curve_313  Torsional moment - Beam 6124 ( * 0.7375 (y))
+# label curve_314  Torsional moment - Beam 6125 ( * 0.7375 (y))
+# label curve_315  Torsional moment - Beam 6126 ( * 0.7375 (y))
+# label curve_316  Torsional moment - Beam 6127 ( * 0.7375 (y))
+# label curve_317  Torsional moment - Beam 6128 ( * 0.7375 (y))
+# label curve_318  Torsional moment - Beam 6129 ( * 0.7375 (y))
+# label curve_319  Torsional moment - Beam 6130 ( * 0.7375 (y))
+# label curve_320  Torsional moment - Beam 6131 ( * 0.7375 (y))
+#
+# Curve Style definitions
+#
+stylec curve_161 white,default,solid,triangle,1
+stylec curve_162 red,default,solid,square,1
+stylec curve_163 green,default,solid,diamond,1
+stylec curve_164 blue,default,solid,hourglass,1
+stylec curve_165 cyan,default,solid,cross,1
+stylec curve_166 magenta,default,solid,circle,1
+stylec curve_167 white,default,dash,star,1
+stylec curve_168 red,default,dash,dot,1
+stylec curve_169 green,default,dash,triangle,1
+stylec curve_170 blue,default,dash,square,1
+stylec curve_171 cyan,default,dash,diamond,1
+stylec curve_172 magenta,default,dash,hourglass,1
+stylec curve_173 white,default,solid,cross,1
+stylec curve_174 red,default,solid,circle,1
+stylec curve_175 green,default,solid,star,1
+stylec curve_176 blue,default,solid,dot,1
+stylec curve_177 cyan,default,solid,triangle,1
+stylec curve_178 magenta,default,solid,square,1
+stylec curve_179 white,default,dash,diamond,1
+stylec curve_180 red,default,dash,hourglass,1
+stylec curve_181 green,default,dash,cross,1
+stylec curve_182 blue,default,dash,circle,1
+stylec curve_183 cyan,default,dash,star,1
+stylec curve_184 magenta,default,dash,dot,1
+stylec curve_185 white,default,solid,triangle,1
+stylec curve_186 red,default,solid,square,1
+stylec curve_187 green,default,solid,diamond,1
+stylec curve_188 blue,default,solid,hourglass,1
+stylec curve_189 cyan,default,solid,cross,1
+stylec curve_190 magenta,default,solid,circle,1
+stylec curve_191 white,default,dash,star,1
+stylec curve_192 red,default,dash,dot,1
+stylec curve_193 green,default,dash,triangle,1
+stylec curve_194 blue,default,dash,square,1
+stylec curve_195 cyan,default,dash,diamond,1
+stylec curve_196 magenta,default,dash,hourglass,1
+stylec curve_197 white,default,solid,cross,1
+stylec curve_198 red,default,solid,circle,1
+stylec curve_199 green,default,solid,star,1
+stylec curve_200 blue,default,solid,dot,1
+stylec curve_201 cyan,default,solid,triangle,1
+stylec curve_202 magenta,default,solid,square,1
+stylec curve_203 white,default,dash,diamond,1
+stylec curve_204 red,default,dash,hourglass,1
+stylec curve_205 green,default,dash,cross,1
+stylec curve_206 blue,default,dash,circle,1
+stylec curve_207 cyan,default,dash,star,1
+stylec curve_208 magenta,default,dash,dot,1
+stylec curve_209 white,default,solid,triangle,1
+stylec curve_210 red,default,solid,square,1
+stylec curve_211 green,default,solid,diamond,1
+stylec curve_212 blue,default,solid,hourglass,1
+stylec curve_213 cyan,default,solid,cross,1
+stylec curve_214 magenta,default,solid,circle,1
+stylec curve_215 white,default,dash,star,1
+stylec curve_216 red,default,dash,dot,1
+stylec curve_217 green,default,dash,triangle,1
+stylec curve_218 blue,default,dash,square,1
+stylec curve_219 cyan,default,dash,diamond,1
+stylec curve_220 magenta,default,dash,hourglass,1
+stylec curve_221 white,default,solid,cross,1
+stylec curve_222 red,default,solid,circle,1
+stylec curve_223 green,default,solid,star,1
+stylec curve_224 blue,default,solid,dot,1
+stylec curve_225 cyan,default,solid,triangle,1
+stylec curve_226 magenta,default,solid,square,1
+stylec curve_227 white,default,dash,diamond,1
+stylec curve_228 red,default,dash,hourglass,1
+stylec curve_229 green,default,dash,cross,1
+stylec curve_230 blue,default,dash,circle,1
+stylec curve_231 cyan,default,dash,star,1
+stylec curve_232 magenta,default,dash,dot,1
+stylec curve_233 white,default,solid,triangle,1
+stylec curve_234 red,default,solid,square,1
+stylec curve_235 green,default,solid,diamond,1
+stylec curve_236 blue,default,solid,hourglass,1
+stylec curve_237 cyan,default,solid,cross,1
+stylec curve_238 magenta,default,solid,circle,1
+stylec curve_239 white,default,dash,star,1
+stylec curve_240 red,default,dash,dot,1
+stylec curve_241 green,default,dash,triangle,1
+stylec curve_242 blue,default,dash,square,1
+stylec curve_243 cyan,default,dash,diamond,1
+stylec curve_244 magenta,default,dash,hourglass,1
+stylec curve_245 white,default,solid,cross,1
+stylec curve_246 red,default,solid,circle,1
+stylec curve_247 green,default,solid,star,1
+stylec curve_248 blue,default,solid,dot,1
+stylec curve_249 cyan,default,solid,triangle,1
+stylec curve_250 magenta,default,solid,square,1
+stylec curve_251 white,default,dash,diamond,1
+stylec curve_252 red,default,dash,hourglass,1
+stylec curve_253 green,default,dash,cross,1
+stylec curve_254 blue,default,dash,circle,1
+stylec curve_255 cyan,default,dash,star,1
+stylec curve_256 magenta,default,dash,dot,1
+stylec curve_257 white,default,solid,triangle,1
+stylec curve_258 red,default,solid,square,1
+stylec curve_259 green,default,solid,diamond,1
+stylec curve_260 blue,default,solid,hourglass,1
+stylec curve_261 cyan,default,solid,cross,1
+stylec curve_262 magenta,default,solid,circle,1
+stylec curve_263 white,default,dash,star,1
+stylec curve_264 red,default,dash,dot,1
+stylec curve_265 green,default,dash,triangle,1
+stylec curve_266 blue,default,dash,square,1
+stylec curve_267 cyan,default,dash,diamond,1
+stylec curve_268 magenta,default,dash,hourglass,1
+stylec curve_269 white,default,solid,cross,1
+stylec curve_270 red,default,solid,circle,1
+stylec curve_271 green,default,solid,star,1
+stylec curve_272 blue,default,solid,dot,1
+stylec curve_273 cyan,default,solid,triangle,1
+stylec curve_274 magenta,default,solid,square,1
+stylec curve_275 white,default,dash,diamond,1
+stylec curve_276 red,default,dash,hourglass,1
+stylec curve_277 green,default,dash,cross,1
+stylec curve_278 blue,default,dash,circle,1
+stylec curve_279 cyan,default,dash,star,1
+stylec curve_280 magenta,default,dash,dot,1
+stylec curve_281 white,default,solid,triangle,1
+stylec curve_282 red,default,solid,square,1
+stylec curve_283 green,default,solid,diamond,1
+stylec curve_284 blue,default,solid,hourglass,1
+stylec curve_285 cyan,default,solid,cross,1
+stylec curve_286 magenta,default,solid,circle,1
+stylec curve_287 white,default,dash,star,1
+stylec curve_288 red,default,dash,dot,1
+stylec curve_289 green,default,dash,triangle,1
+stylec curve_290 blue,default,dash,square,1
+stylec curve_291 cyan,default,dash,diamond,1
+stylec curve_292 magenta,default,dash,hourglass,1
+stylec curve_293 white,default,solid,cross,1
+stylec curve_294 red,default,solid,circle,1
+stylec curve_295 green,default,solid,star,1
+stylec curve_296 blue,default,solid,dot,1
+stylec curve_297 cyan,default,solid,triangle,1
+stylec curve_298 magenta,default,solid,square,1
+stylec curve_299 white,default,dash,diamond,1
+stylec curve_300 red,default,dash,hourglass,1
+stylec curve_301 green,default,dash,cross,1
+stylec curve_302 blue,default,dash,circle,1
+stylec curve_303 cyan,default,dash,star,1
+stylec curve_304 magenta,default,dash,dot,1
+stylec curve_305 white,default,solid,triangle,1
+stylec curve_306 red,default,solid,square,1
+stylec curve_307 green,default,solid,diamond,1
+stylec curve_308 blue,default,solid,hourglass,1
+stylec curve_309 cyan,default,solid,cross,1
+stylec curve_310 magenta,default,solid,circle,1
+stylec curve_311 white,default,dash,star,1
+stylec curve_312 red,default,dash,dot,1
+stylec curve_313 green,default,dash,triangle,1
+stylec curve_314 blue,default,dash,square,1
+stylec curve_315 cyan,default,dash,diamond,1
+stylec curve_316 magenta,default,dash,hourglass,1
+stylec curve_317 white,default,solid,cross,1
+stylec curve_318 red,default,solid,circle,1
+stylec curve_319 green,default,solid,star,1
+stylec curve_320 blue,default,solid,dot,1
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        title_on \
+        x_label auto \
+        x_label on \
+        x_unit auto \
+        x_unit on \
+        y_label auto \
+        y_label on \
+        y_unit auto \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min auto\
+        y2_max auto\
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid normal \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default Default foreground \
+        font xlabel Default Default foreground \
+        font ylabel Default Default foreground \
+        font y2label Default Default foreground \
+        font legend Default Default foreground \
+        font xunit Default Default foreground \
+        font yunit Default Default foreground \
+        font y2unit Default Default foreground
+#
+# User lines setup
+#
+#
+# Unblank curves in graph and set up axis labels and title
+#
+display curve_161 curve_162 curve_163 curve_164 curve_165 curve_166 curve_167 curve_168 curve_169 curve_170 curve_171 curve_172 curve_173 curve_174 curve_175 curve_176 curve_177 curve_178 curve_179 curve_180 curve_181
+display_add curve_182 curve_183 curve_184 curve_185 curve_186 curve_187 curve_188 curve_189 curve_190 curve_191 curve_192 curve_193 curve_194 curve_195 curve_196 curve_197 curve_198 curve_199 curve_200 curve_201
+display_add curve_202 curve_203 curve_204 curve_205 curve_206 curve_207 curve_208 curve_209 curve_210 curve_211 curve_212 curve_213 curve_214 curve_215 curve_216 curve_217 curve_218 curve_219 curve_220 curve_221
+display_add curve_222 curve_223 curve_224 curve_225 curve_226 curve_227 curve_228 curve_229 curve_230 curve_231 curve_232 curve_233 curve_234 curve_235 curve_236 curve_237 curve_238 curve_239 curve_240 curve_241
+display_add curve_242 curve_243 curve_244 curve_245 curve_246 curve_247 curve_248 curve_249 curve_250 curve_251 curve_252 curve_253 curve_254 curve_255 curve_256 curve_257 curve_258 curve_259 curve_260 curve_261
+display_add curve_262 curve_263 curve_264 curve_265 curve_266 curve_267 curve_268 curve_269 curve_270 curve_271 curve_272 curve_273 curve_274 curve_275 curve_276 curve_277 curve_278 curve_279 curve_280 curve_281
+display_add curve_282 curve_283 curve_284 curve_285 curve_286 curve_287 curve_288 curve_289 curve_290 curve_291 curve_292 curve_293 curve_294 curve_295 curve_296 curve_297 curve_298 curve_299 curve_300 curve_301
+display_add curve_302 curve_303 curve_304 curve_305 curve_306 curve_307 curve_308 curve_309 curve_310 curve_311 curve_312 curve_313 curve_314 curve_315 curve_316 curve_317 curve_318 curve_319 curve_320
+#
+# User defined model prefix
+#
+prefix model  1 M1
+#
+# Set all graphs active
+#
+layout graph select all
+csv2 collectors.csv curve_* auto

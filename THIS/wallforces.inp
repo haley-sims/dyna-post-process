@@ -1,0 +1,1044 @@
+# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to multiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page wide
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.08 1.00,0.45
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format automatic
+layout graph 1 x-axis precision 1
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 1
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+section 101 force x tag curve_1
+section 101 force z tag curve_2
+operation div curve_1 4448 tag curve_3
+operation div curve_2 4448 tag curve_4
+delete curve_1 curve_2
+label curve_3  P1 in-plane shear (kips)
+label curve_4  P1 axial (kips)
+stylec curve_3 white,default,solid,circle,1
+stylec curve_4 red,default,solid,circle,1
+#
+section 102 force x tag curve_5
+section 102 force z tag curve_6
+operation div curve_5 4448 tag curve_7
+operation div curve_6 4448 tag curve_8
+delete curve_5 curve_6
+label curve_7  P2 in-plane shear (kips)
+label curve_8  P2 axial (kips)
+stylec curve_7 green,default,solid,circle,1
+stylec curve_8 blue,default,solid,circle,1
+#
+section 103 force x tag curve_9
+section 103 force z tag curve_10
+operation div curve_9 4448 tag curve_11
+operation div curve_10 4448 tag curve_12
+delete curve_9 curve_10
+label curve_11  P3 in-plane shear (kips)
+label curve_12  P3 axial (kips)
+stylec curve_11 cyan,default,solid,circle,1
+stylec curve_12 magenta,default,solid,circle,1
+#
+section 104 force x tag curve_13
+section 104 force z tag curve_14
+operation div curve_13 4448 tag curve_15
+operation div curve_14 4448 tag curve_16
+delete curve_13 curve_14
+label curve_15  P4 in-plane shear (kips)
+label curve_16  P4 axial (kips)
+stylec curve_15 yellow,default,solid,circle,1
+stylec curve_16 orange,default,solid,circle,1
+#
+section 105 force x tag curve_17
+section 105 force z tag curve_18
+operation div curve_17 4448 tag curve_19
+operation div curve_18 4448 tag curve_20
+delete curve_17 curve_18
+label curve_19  P5 in-plane shear (kips)
+label curve_20  P5 axial (kips)
+stylec curve_19 purple,default,solid,circle,1
+stylec curve_20 white,default,solid,circle,1
+#
+section 106 force x tag curve_21
+section 106 force z tag curve_22
+operation div curve_21 4448 tag curve_23
+operation div curve_22 4448 tag curve_24
+delete curve_21 curve_22
+label curve_23  P6 in-plane shear (kips)
+label curve_24  P6 axial (kips)
+stylec curve_23 red,default,solid,circle,1
+stylec curve_24 green,default,solid,circle,1
+#
+section 107 force x tag curve_25
+section 107 force z tag curve_26
+operation div curve_25 4448 tag curve_27
+operation div curve_26 4448 tag curve_28
+delete curve_25 curve_26
+label curve_27  P7 in-plane shear (kips)
+label curve_28  P7 axial (kips)
+stylec curve_27 blue,default,solid,circle,1
+stylec curve_28 cyan,default,solid,circle,1
+#
+section 108 force x tag curve_29
+section 108 force z tag curve_30
+operation div curve_29 4448 tag curve_31
+operation div curve_30 4448 tag curve_32
+delete curve_29 curve_30
+label curve_31  P8 in-plane shear (kips)
+label curve_32  P8 axial (kips)
+stylec curve_31 magenta,default,solid,circle,1
+stylec curve_32 yellow,default,solid,circle,1
+#
+section 109 force x tag curve_33
+section 109 force z tag curve_34
+operation div curve_33 4448 tag curve_35
+operation div curve_34 4448 tag curve_36
+delete curve_33 curve_34
+label curve_35  P9 in-plane shear (kips)
+label curve_36  P9 axial (kips)
+stylec curve_35 orange,default,solid,circle,1
+stylec curve_36 purple,default,solid,circle,1
+#
+section 110 force x tag curve_37
+section 110 force z tag curve_38
+operation div curve_37 4448 tag curve_39
+operation div curve_38 4448 tag curve_40
+delete curve_37 curve_38
+label curve_39  P10 in-plane shear (kips)
+label curve_40  P10 axial (kips)
+stylec curve_39 white,default,solid,circle,1
+stylec curve_40 red,default,solid,circle,1
+#
+section 111 force x tag curve_41
+section 111 force z tag curve_42
+operation div curve_41 4448 tag curve_43
+operation div curve_42 4448 tag curve_44
+delete curve_41 curve_42
+label curve_43  P11 in-plane shear (kips)
+label curve_44  P11 axial (kips)
+stylec curve_43 green,default,solid,circle,1
+stylec curve_44 blue,default,solid,circle,1
+#
+section 112 force x tag curve_45
+section 112 force z tag curve_46
+operation div curve_45 4448 tag curve_47
+operation div curve_46 4448 tag curve_48
+delete curve_45 curve_46
+label curve_47  H1 in-plane shear (kips)
+label curve_48  H1 axial (kips)
+stylec curve_47 cyan,default,solid,circle,1
+stylec curve_48 magenta,default,solid,circle,1
+#
+section 113 force x tag curve_49
+section 113 force z tag curve_50
+operation div curve_49 4448 tag curve_51
+operation div curve_50 4448 tag curve_52
+delete curve_49 curve_50
+label curve_51  H2 in-plane shear (kips)
+label curve_52  H2 axial (kips)
+stylec curve_51 yellow,default,solid,circle,1
+stylec curve_52 orange,default,solid,circle,1
+#
+section 114 force x tag curve_53
+section 114 force z tag curve_54
+operation div curve_53 4448 tag curve_55
+operation div curve_54 4448 tag curve_56
+delete curve_53 curve_54
+label curve_55  H3 in-plane shear (kips)
+label curve_56  H3 axial (kips)
+stylec curve_55 purple,default,solid,circle,1
+stylec curve_56 white,default,solid,circle,1
+#
+section 115 force x tag curve_57
+section 115 force z tag curve_58
+operation div curve_57 4448 tag curve_59
+operation div curve_58 4448 tag curve_60
+delete curve_57 curve_58
+label curve_59  H4 in-plane shear (kips)
+label curve_60  H4 axial (kips)
+stylec curve_59 red,default,solid,circle,1
+stylec curve_60 green,default,solid,circle,1
+#
+section 116 force x tag curve_61
+section 116 force z tag curve_62
+operation div curve_61 4448 tag curve_63
+operation div curve_62 4448 tag curve_64
+delete curve_61 curve_62
+label curve_63  H5 in-plane shear (kips)
+label curve_64  H5 axial (kips)
+stylec curve_63 blue,default,solid,circle,1
+stylec curve_64 cyan,default,solid,circle,1
+#
+section 117 force x tag curve_65
+section 117 force z tag curve_66
+operation div curve_65 4448 tag curve_67
+operation div curve_66 4448 tag curve_68
+delete curve_65 curve_66
+label curve_67  H6 in-plane shear (kips)
+label curve_68  H6 axial (kips)
+stylec curve_67 magenta,default,solid,circle,1
+stylec curve_68 yellow,default,solid,circle,1
+#
+section 118 force x tag curve_69
+section 118 force z tag curve_70
+operation div curve_69 4448 tag curve_71
+operation div curve_70 4448 tag curve_72
+delete curve_69 curve_70
+label curve_71  H7 in-plane shear (kips)
+label curve_72  H7 axial (kips)
+stylec curve_71 orange,default,solid,circle,1
+stylec curve_72 purple,default,solid,circle,1
+#
+section 119 force x tag curve_73
+section 119 force z tag curve_74
+operation div curve_73 4448 tag curve_75
+operation div curve_74 4448 tag curve_76
+delete curve_73 curve_74
+label curve_75  K1 in-plane shear (kips)
+label curve_76  K1 axial (kips)
+stylec curve_75 white,default,solid,circle,1
+stylec curve_76 red,default,solid,circle,1
+#
+section 120 force x tag curve_77
+section 120 force z tag curve_78
+operation div curve_77 4448 tag curve_79
+operation div curve_78 4448 tag curve_80
+delete curve_77 curve_78
+label curve_79  K2 in-plane shear (kips)
+label curve_80  K2 axial (kips)
+stylec curve_79 green,default,solid,circle,1
+stylec curve_80 blue,default,solid,circle,1
+#
+section 121 force x tag curve_81
+section 121 force z tag curve_82
+operation div curve_81 4448 tag curve_83
+operation div curve_82 4448 tag curve_84
+delete curve_81 curve_82
+label curve_83  L1 in-plane shear (kips)
+label curve_84  L1 axial (kips)
+stylec curve_83 cyan,default,solid,circle,1
+stylec curve_84 magenta,default,solid,circle,1
+#
+section 122 force x tag curve_85
+section 122 force z tag curve_86
+operation div curve_85 4448 tag curve_87
+operation div curve_86 4448 tag curve_88
+delete curve_85 curve_86
+label curve_87  M1 in-plane shear (kips)
+label curve_88  M1 axial (kips)
+stylec curve_87 yellow,default,solid,circle,1
+stylec curve_88 orange,default,solid,circle,1
+#
+section 123 force x tag curve_89
+section 123 force z tag curve_90
+operation div curve_89 4448 tag curve_91
+operation div curve_90 4448 tag curve_92
+delete curve_89 curve_90
+label curve_91  N1 in-plane shear (kips)
+label curve_92  N1 axial (kips)
+stylec curve_91 purple,default,solid,circle,1
+stylec curve_92 white,default,solid,circle,1
+#
+section 124 force x tag curve_93
+section 124 force z tag curve_94
+operation div curve_93 4448 tag curve_95
+operation div curve_94 4448 tag curve_96
+delete curve_93 curve_94
+label curve_95  N2 in-plane shear (kips)
+label curve_96  N2 axial (kips)
+stylec curve_95 red,default,solid,circle,1
+stylec curve_96 green,default,solid,circle,1
+#
+section 125 force x tag curve_97
+section 125 force z tag curve_98
+operation div curve_97 4448 tag curve_99
+operation div curve_98 4448 tag curve_100
+delete curve_97 curve_98
+label curve_99  C1 in-plane shear (kips)
+label curve_100  C1 axial (kips)
+stylec curve_99 blue,default,solid,circle,1
+stylec curve_100 cyan,default,solid,circle,1
+#
+section 126 force y tag curve_101
+section 126 force z tag curve_102
+operation div curve_101 4448 tag curve_103
+operation div curve_102 4448 tag curve_104
+delete curve_101 curve_102
+label curve_103  0.1 in-plane shear (kips)
+label curve_104  0.1 axial (kips)
+stylec curve_103 magenta,default,solid,circle,1
+stylec curve_104 yellow,default,solid,circle,1
+#
+section 127 force y tag curve_105
+section 127 force z tag curve_106
+operation div curve_105 4448 tag curve_107
+operation div curve_106 4448 tag curve_108
+delete curve_105 curve_106
+label curve_107  0.2 in-plane shear (kips)
+label curve_108  0.2 axial (kips)
+stylec curve_107 orange,default,solid,circle,1
+stylec curve_108 purple,default,solid,circle,1
+#
+section 128 force y tag curve_109
+section 128 force z tag curve_110
+operation div curve_109 4448 tag curve_111
+operation div curve_110 4448 tag curve_112
+delete curve_109 curve_110
+label curve_111  0.3 in-plane shear (kips)
+label curve_112  0.3 axial (kips)
+stylec curve_111 white,default,solid,circle,1
+stylec curve_112 red,default,solid,circle,1
+#
+section 129 force y tag curve_113
+section 129 force z tag curve_114
+operation div curve_113 4448 tag curve_115
+operation div curve_114 4448 tag curve_116
+delete curve_113 curve_114
+label curve_115  0.4 in-plane shear (kips)
+label curve_116  0.4 axial (kips)
+stylec curve_115 green,default,solid,circle,1
+stylec curve_116 blue,default,solid,circle,1
+#
+section 130 force y tag curve_117
+section 130 force z tag curve_118
+operation div curve_117 4448 tag curve_119
+operation div curve_118 4448 tag curve_120
+delete curve_117 curve_118
+label curve_119  0.5 in-plane shear (kips)
+label curve_120  0.5 axial (kips)
+stylec curve_119 cyan,default,solid,circle,1
+stylec curve_120 magenta,default,solid,circle,1
+#
+section 131 force y tag curve_121
+section 131 force z tag curve_122
+operation div curve_121 4448 tag curve_123
+operation div curve_122 4448 tag curve_124
+delete curve_121 curve_122
+label curve_123  0.6 in-plane shear (kips)
+label curve_124  0.6 axial (kips)
+stylec curve_123 yellow,default,solid,circle,1
+stylec curve_124 orange,default,solid,circle,1
+#
+section 132 force y tag curve_125
+section 132 force z tag curve_126
+operation div curve_125 4448 tag curve_127
+operation div curve_126 4448 tag curve_128
+delete curve_125 curve_126
+label curve_127  0.7 in-plane shear (kips)
+label curve_128  0.7 axial (kips)
+stylec curve_127 purple,default,solid,circle,1
+stylec curve_128 white,default,solid,circle,1
+#
+section 133 force y tag curve_129
+section 133 force z tag curve_130
+operation div curve_129 4448 tag curve_131
+operation div curve_130 4448 tag curve_132
+delete curve_129 curve_130
+label curve_131  0.8 in-plane shear (kips)
+label curve_132  0.8 axial (kips)
+stylec curve_131 red,default,solid,circle,1
+stylec curve_132 green,default,solid,circle,1
+#
+section 134 force y tag curve_133
+section 134 force z tag curve_134
+operation div curve_133 4448 tag curve_135
+operation div curve_134 4448 tag curve_136
+delete curve_133 curve_134
+label curve_135  0.9 in-plane shear (kips)
+label curve_136  0.9 axial (kips)
+stylec curve_135 blue,default,solid,circle,1
+stylec curve_136 cyan,default,solid,circle,1
+#
+section 135 force y tag curve_137
+section 135 force z tag curve_138
+operation div curve_137 4448 tag curve_139
+operation div curve_138 4448 tag curve_140
+delete curve_137 curve_138
+label curve_139  0.10. in-plane shear (kips)
+label curve_140  0.10. axial (kips)
+stylec curve_139 magenta,default,solid,circle,1
+stylec curve_140 yellow,default,solid,circle,1
+#
+section 136 force y tag curve_141
+section 136 force z tag curve_142
+operation div curve_141 4448 tag curve_143
+operation div curve_142 4448 tag curve_144
+delete curve_141 curve_142
+label curve_143  0.11 in-plane shear (kips)
+label curve_144  0.11 axial (kips)
+stylec curve_143 orange,default,solid,circle,1
+stylec curve_144 purple,default,solid,circle,1
+#
+section 137 force y tag curve_145
+section 137 force z tag curve_146
+operation div curve_145 4448 tag curve_147
+operation div curve_146 4448 tag curve_148
+delete curve_145 curve_146
+label curve_147  0.12 in-plane shear (kips)
+label curve_148  0.12 axial (kips)
+stylec curve_147 white,default,solid,circle,1
+stylec curve_148 red,default,solid,circle,1
+#
+section 138 force y tag curve_149
+section 138 force z tag curve_150
+operation div curve_149 4448 tag curve_151
+operation div curve_150 4448 tag curve_152
+delete curve_149 curve_150
+label curve_151  0.13 in-plane shear (kips)
+label curve_152  0.13 axial (kips)
+stylec curve_151 green,default,solid,circle,1
+stylec curve_152 blue,default,solid,circle,1
+#
+section 139 force y tag curve_153
+section 139 force z tag curve_154
+operation div curve_153 4448 tag curve_155
+operation div curve_154 4448 tag curve_156
+delete curve_153 curve_154
+label curve_155  0.14 in-plane shear (kips)
+label curve_156  0.14 axial (kips)
+stylec curve_155 cyan,default,solid,circle,1
+stylec curve_156 magenta,default,solid,circle,1
+#
+section 140 force y tag curve_157
+section 140 force z tag curve_158
+operation div curve_157 4448 tag curve_159
+operation div curve_158 4448 tag curve_160
+delete curve_157 curve_158
+label curve_159  0.15 in-plane shear (kips)
+label curve_160  0.15 axial (kips)
+stylec curve_159 yellow,default,solid,circle,1
+stylec curve_160 orange,default,solid,circle,1
+#
+section 141 force y tag curve_161
+section 141 force z tag curve_162
+operation div curve_161 4448 tag curve_163
+operation div curve_162 4448 tag curve_164
+delete curve_161 curve_162
+label curve_163  1.2-c in-plane shear (kips)
+label curve_164  1.2-c axial (kips)
+stylec curve_163 purple,default,solid,circle,1
+stylec curve_164 white,default,solid,circle,1
+#
+section 142 force y tag curve_165
+section 142 force z tag curve_166
+operation div curve_165 4448 tag curve_167
+operation div curve_166 4448 tag curve_168
+delete curve_165 curve_166
+label curve_167  1.3-c in-plane shear (kips)
+label curve_168  1.3-c axial (kips)
+stylec curve_167 red,default,solid,circle,1
+stylec curve_168 green,default,solid,circle,1
+#
+section 143 force y tag curve_169
+section 143 force z tag curve_170
+operation div curve_169 4448 tag curve_171
+operation div curve_170 4448 tag curve_172
+delete curve_169 curve_170
+label curve_171  1.4-c in-plane shear (kips)
+label curve_172  1.4-c axial (kips)
+stylec curve_171 blue,default,solid,circle,1
+stylec curve_172 cyan,default,solid,circle,1
+#
+section 144 force y tag curve_173
+section 144 force z tag curve_174
+operation div curve_173 4448 tag curve_175
+operation div curve_174 4448 tag curve_176
+delete curve_173 curve_174
+label curve_175  1.5-c in-plane shear (kips)
+label curve_176  1.5-c axial (kips)
+stylec curve_175 magenta,default,solid,circle,1
+stylec curve_176 yellow,default,solid,circle,1
+#
+section 145 force y tag curve_177
+section 145 force z tag curve_178
+operation div curve_177 4448 tag curve_179
+operation div curve_178 4448 tag curve_180
+delete curve_177 curve_178
+label curve_179  1.6-c in-plane shear (kips)
+label curve_180  1.6-c axial (kips)
+stylec curve_179 orange,default,solid,circle,1
+stylec curve_180 purple,default,solid,circle,1
+#
+section 146 force y tag curve_181
+section 146 force z tag curve_182
+operation div curve_181 4448 tag curve_183
+operation div curve_182 4448 tag curve_184
+delete curve_181 curve_182
+label curve_183  1.7-c in-plane shear (kips)
+label curve_184  1.7-c axial (kips)
+stylec curve_183 white,default,solid,circle,1
+stylec curve_184 red,default,solid,circle,1
+#
+section 147 force y tag curve_185
+section 147 force z tag curve_186
+operation div curve_185 4448 tag curve_187
+operation div curve_186 4448 tag curve_188
+delete curve_185 curve_186
+label curve_187  1.8-c in-plane shear (kips)
+label curve_188  1.8-c axial (kips)
+stylec curve_187 green,default,solid,circle,1
+stylec curve_188 blue,default,solid,circle,1
+#
+section 148 force y tag curve_189
+section 148 force z tag curve_190
+operation div curve_189 4448 tag curve_191
+operation div curve_190 4448 tag curve_192
+delete curve_189 curve_190
+label curve_191  1.9-c in-plane shear (kips)
+label curve_192  1.9-c axial (kips)
+stylec curve_191 cyan,default,solid,circle,1
+stylec curve_192 magenta,default,solid,circle,1
+#
+section 149 force y tag curve_193
+section 149 force z tag curve_194
+operation div curve_193 4448 tag curve_195
+operation div curve_194 4448 tag curve_196
+delete curve_193 curve_194
+label curve_195  1.10-c in-plane shear (kips)
+label curve_196  1.10-c axial (kips)
+stylec curve_195 yellow,default,solid,circle,1
+stylec curve_196 orange,default,solid,circle,1
+#
+section 150 force y tag curve_197
+section 150 force z tag curve_198
+operation div curve_197 4448 tag curve_199
+operation div curve_198 4448 tag curve_200
+delete curve_197 curve_198
+label curve_199  1.11-c in-plane shear (kips)
+label curve_200  1.11-c axial (kips)
+stylec curve_199 purple,default,solid,circle,1
+stylec curve_200 white,default,solid,circle,1
+#
+section 151 force y tag curve_201
+section 151 force z tag curve_202
+operation div curve_201 4448 tag curve_203
+operation div curve_202 4448 tag curve_204
+delete curve_201 curve_202
+label curve_203  1.12-c in-plane shear (kips)
+label curve_204  1.12-c axial (kips)
+stylec curve_203 red,default,solid,circle,1
+stylec curve_204 green,default,solid,circle,1
+#
+section 152 force y tag curve_205
+section 152 force z tag curve_206
+operation div curve_205 4448 tag curve_207
+operation div curve_206 4448 tag curve_208
+delete curve_205 curve_206
+label curve_207  1.13-c in-plane shear (kips)
+label curve_208  1.13-c axial (kips)
+stylec curve_207 blue,default,solid,circle,1
+stylec curve_208 cyan,default,solid,circle,1
+#
+section 153 force y tag curve_209
+section 153 force z tag curve_210
+operation div curve_209 4448 tag curve_211
+operation div curve_210 4448 tag curve_212
+delete curve_209 curve_210
+label curve_211  1.1-5 in-plane shear (kips)
+label curve_212  1.1-5 axial (kips)
+stylec curve_211 magenta,default,solid,circle,1
+stylec curve_212 yellow,default,solid,circle,1
+#
+section 154 force y tag curve_213
+section 154 force z tag curve_214
+operation div curve_213 4448 tag curve_215
+operation div curve_214 4448 tag curve_216
+delete curve_213 curve_214
+label curve_215  1.2-5 in-plane shear (kips)
+label curve_216  1.2-5 axial (kips)
+stylec curve_215 orange,default,solid,circle,1
+stylec curve_216 purple,default,solid,circle,1
+#
+section 155 force y tag curve_217
+section 155 force z tag curve_218
+operation div curve_217 4448 tag curve_219
+operation div curve_218 4448 tag curve_220
+delete curve_217 curve_218
+label curve_219  1.3-5 in-plane shear (kips)
+label curve_220  1.3-5 axial (kips)
+stylec curve_219 white,default,solid,circle,1
+stylec curve_220 red,default,solid,circle,1
+#
+section 156 force y tag curve_221
+section 156 force z tag curve_222
+operation div curve_221 4448 tag curve_223
+operation div curve_222 4448 tag curve_224
+delete curve_221 curve_222
+label curve_223  1.9-5 in-plane shear (kips)
+label curve_224  1.9-5 axial (kips)
+stylec curve_223 green,default,solid,circle,1
+stylec curve_224 blue,default,solid,circle,1
+#
+section 157 force y tag curve_225
+section 157 force z tag curve_226
+operation div curve_225 4448 tag curve_227
+operation div curve_226 4448 tag curve_228
+delete curve_225 curve_226
+label curve_227  1.10-5 in-plane shear (kips)
+label curve_228  1.10-5 axial (kips)
+stylec curve_227 cyan,default,solid,circle,1
+stylec curve_228 magenta,default,solid,circle,1
+#
+section 158 force y tag curve_229
+section 158 force z tag curve_230
+operation div curve_229 4448 tag curve_231
+operation div curve_230 4448 tag curve_232
+delete curve_229 curve_230
+label curve_231  1.11-5 in-plane shear (kips)
+label curve_232  1.11-5 axial (kips)
+stylec curve_231 yellow,default,solid,circle,1
+stylec curve_232 orange,default,solid,circle,1
+#
+section 159 force y tag curve_233
+section 159 force z tag curve_234
+operation div curve_233 4448 tag curve_235
+operation div curve_234 4448 tag curve_236
+delete curve_233 curve_234
+label curve_235  1.12-5 in-plane shear (kips)
+label curve_236  1.12-5 axial (kips)
+stylec curve_235 purple,default,solid,circle,1
+stylec curve_236 white,default,solid,circle,1
+#
+section 160 force y tag curve_237
+section 160 force z tag curve_238
+operation div curve_237 4448 tag curve_239
+operation div curve_238 4448 tag curve_240
+delete curve_237 curve_238
+label curve_239  2.1 in-plane shear (kips)
+label curve_240  2.1 axial (kips)
+stylec curve_239 red,default,solid,circle,1
+stylec curve_240 green,default,solid,circle,1
+#
+section 161 force y tag curve_241
+section 161 force z tag curve_242
+operation div curve_241 4448 tag curve_243
+operation div curve_242 4448 tag curve_244
+delete curve_241 curve_242
+label curve_243  3.3-1 in-plane shear (kips)
+label curve_244  3.3-1 axial (kips)
+stylec curve_243 blue,default,solid,circle,1
+stylec curve_244 cyan,default,solid,circle,1
+#
+section 162 force y tag curve_245
+section 162 force z tag curve_246
+operation div curve_245 4448 tag curve_247
+operation div curve_246 4448 tag curve_248
+delete curve_245 curve_246
+label curve_247  3.3-2 in-plane shear (kips)
+label curve_248  3.3-2 axial (kips)
+stylec curve_247 magenta,default,solid,circle,1
+stylec curve_248 yellow,default,solid,circle,1
+#
+section 163 force y tag curve_249
+section 163 force z tag curve_250
+operation div curve_249 4448 tag curve_251
+operation div curve_250 4448 tag curve_252
+delete curve_249 curve_250
+label curve_251  5.1 in-plane shear (kips)
+label curve_252  5.1 axial (kips)
+stylec curve_251 orange,default,solid,circle,1
+stylec curve_252 purple,default,solid,circle,1
+#
+section 164 force y tag curve_253
+section 164 force z tag curve_254
+operation div curve_253 4448 tag curve_255
+operation div curve_254 4448 tag curve_256
+delete curve_253 curve_254
+label curve_255  5.2 in-plane shear (kips)
+label curve_256  5.2 axial (kips)
+stylec curve_255 white,default,solid,circle,1
+stylec curve_256 red,default,solid,circle,1
+#
+section 165 force y tag curve_257
+section 165 force z tag curve_258
+operation div curve_257 4448 tag curve_259
+operation div curve_258 4448 tag curve_260
+delete curve_257 curve_258
+label curve_259  5.3 in-plane shear (kips)
+label curve_260  5.3 axial (kips)
+stylec curve_259 green,default,solid,circle,1
+stylec curve_260 blue,default,solid,circle,1
+#
+section 166 force y tag curve_261
+section 166 force z tag curve_262
+operation div curve_261 4448 tag curve_263
+operation div curve_262 4448 tag curve_264
+delete curve_261 curve_262
+label curve_263  5.4 in-plane shear (kips)
+label curve_264  5.4 axial (kips)
+stylec curve_263 cyan,default,solid,circle,1
+stylec curve_264 magenta,default,solid,circle,1
+#
+section 167 force y tag curve_265
+section 167 force z tag curve_266
+operation div curve_265 4448 tag curve_267
+operation div curve_266 4448 tag curve_268
+delete curve_265 curve_266
+label curve_267  5.5 in-plane shear (kips)
+label curve_268  5.5 axial (kips)
+stylec curve_267 yellow,default,solid,circle,1
+stylec curve_268 orange,default,solid,circle,1
+#
+section 168 force y tag curve_269
+section 168 force z tag curve_270
+operation div curve_269 4448 tag curve_271
+operation div curve_270 4448 tag curve_272
+delete curve_269 curve_270
+label curve_271  6.1 in-plane shear (kips)
+label curve_272  6.1 axial (kips)
+stylec curve_271 purple,default,solid,circle,1
+stylec curve_272 white,default,solid,circle,1
+#
+section 169 force y tag curve_273
+section 169 force z tag curve_274
+operation div curve_273 4448 tag curve_275
+operation div curve_274 4448 tag curve_276
+delete curve_273 curve_274
+label curve_275  6.2 in-plane shear (kips)
+label curve_276  6.2 axial (kips)
+stylec curve_275 red,default,solid,circle,1
+stylec curve_276 green,default,solid,circle,1
+#
+section 170 force y tag curve_277
+section 170 force z tag curve_278
+operation div curve_277 4448 tag curve_279
+operation div curve_278 4448 tag curve_280
+delete curve_277 curve_278
+label curve_279  6.3 in-plane shear (kips)
+label curve_280  6.3 axial (kips)
+stylec curve_279 blue,default,solid,circle,1
+stylec curve_280 cyan,default,solid,circle,1
+#
+section 171 force y tag curve_281
+section 171 force z tag curve_282
+operation div curve_281 4448 tag curve_283
+operation div curve_282 4448 tag curve_284
+delete curve_281 curve_282
+label curve_283  6.4 in-plane shear (kips)
+label curve_284  6.4 axial (kips)
+stylec curve_283 magenta,default,solid,circle,1
+stylec curve_284 yellow,default,solid,circle,1
+#
+section 172 force y tag curve_285
+section 172 force z tag curve_286
+operation div curve_285 4448 tag curve_287
+operation div curve_286 4448 tag curve_288
+delete curve_285 curve_286
+label curve_287  6.5 in-plane shear (kips)
+label curve_288  6.5 axial (kips)
+stylec curve_287 orange,default,solid,circle,1
+stylec curve_288 purple,default,solid,circle,1
+#
+section 173 force y tag curve_289
+section 173 force z tag curve_290
+operation div curve_289 4448 tag curve_291
+operation div curve_290 4448 tag curve_292
+delete curve_289 curve_290
+label curve_291  6.7 in-plane shear (kips)
+label curve_292  6.7 axial (kips)
+stylec curve_291 white,default,solid,circle,1
+stylec curve_292 red,default,solid,circle,1
+#
+section 174 force y tag curve_293
+section 174 force z tag curve_294
+operation div curve_293 4448 tag curve_295
+operation div curve_294 4448 tag curve_296
+delete curve_293 curve_294
+label curve_295  6.8 in-plane shear (kips)
+label curve_296  6.8 axial (kips)
+stylec curve_295 green,default,solid,circle,1
+stylec curve_296 blue,default,solid,circle,1
+#
+section 175 force y tag curve_297
+section 175 force z tag curve_298
+operation div curve_297 4448 tag curve_299
+operation div curve_298 4448 tag curve_300
+delete curve_297 curve_298
+label curve_299  6.9 in-plane shear (kips)
+label curve_300  6.9 axial (kips)
+stylec curve_299 cyan,default,solid,circle,1
+stylec curve_300 magenta,default,solid,circle,1
+#
+section 176 force y tag curve_301
+section 176 force z tag curve_302
+operation div curve_301 4448 tag curve_303
+operation div curve_302 4448 tag curve_304
+delete curve_301 curve_302
+label curve_303  6.10. in-plane shear (kips)
+label curve_304  6.10. axial (kips)
+stylec curve_303 yellow,default,solid,circle,1
+stylec curve_304 orange,default,solid,circle,1
+#
+section 177 force y tag curve_305
+section 177 force z tag curve_306
+operation div curve_305 4448 tag curve_307
+operation div curve_306 4448 tag curve_308
+delete curve_305 curve_306
+label curve_307  6.11 in-plane shear (kips)
+label curve_308  6.11 axial (kips)
+stylec curve_307 purple,default,solid,circle,1
+stylec curve_308 white,default,solid,circle,1
+#
+section 178 force y tag curve_309
+section 178 force z tag curve_310
+operation div curve_309 4448 tag curve_311
+operation div curve_310 4448 tag curve_312
+delete curve_309 curve_310
+label curve_311  6.12 in-plane shear (kips)
+label curve_312  6.12 axial (kips)
+stylec curve_311 red,default,solid,circle,1
+stylec curve_312 green,default,solid,circle,1
+#
+section 179 force y tag curve_313
+section 179 force z tag curve_314
+operation div curve_313 4448 tag curve_315
+operation div curve_314 4448 tag curve_316
+delete curve_313 curve_314
+label curve_315  7.1 in-plane shear (kips)
+label curve_316  7.1 axial (kips)
+stylec curve_315 blue,default,solid,circle,1
+stylec curve_316 cyan,default,solid,circle,1
+#
+section 180 force y tag curve_317
+section 180 force z tag curve_318
+operation div curve_317 4448 tag curve_319
+operation div curve_318 4448 tag curve_320
+delete curve_317 curve_318
+label curve_319  7.2 in-plane shear (kips)
+label curve_320  7.2 axial (kips)
+stylec curve_319 magenta,default,solid,circle,1
+stylec curve_320 yellow,default,solid,circle,1
+#
+section 181 force y tag curve_321
+section 181 force z tag curve_322
+operation div curve_321 4448 tag curve_323
+operation div curve_322 4448 tag curve_324
+delete curve_321 curve_322
+label curve_323  7.3 in-plane shear (kips)
+label curve_324  7.3 axial (kips)
+stylec curve_323 orange,default,solid,circle,1
+stylec curve_324 purple,default,solid,circle,1
+#
+section 182 force y tag curve_325
+section 182 force z tag curve_326
+operation div curve_325 4448 tag curve_327
+operation div curve_326 4448 tag curve_328
+delete curve_325 curve_326
+label curve_327  7.4 in-plane shear (kips)
+label curve_328  7.4 axial (kips)
+stylec curve_327 white,default,solid,circle,1
+stylec curve_328 red,default,solid,circle,1
+#
+section 183 force y tag curve_329
+section 183 force z tag curve_330
+operation div curve_329 4448 tag curve_331
+operation div curve_330 4448 tag curve_332
+delete curve_329 curve_330
+label curve_331  7.5 in-plane shear (kips)
+label curve_332  7.5 axial (kips)
+stylec curve_331 green,default,solid,circle,1
+stylec curve_332 blue,default,solid,circle,1
+#
+section 184 force y tag curve_333
+section 184 force z tag curve_334
+operation div curve_333 4448 tag curve_335
+operation div curve_334 4448 tag curve_336
+delete curve_333 curve_334
+label curve_335  7.6 in-plane shear (kips)
+label curve_336  7.6 axial (kips)
+stylec curve_335 cyan,default,solid,circle,1
+stylec curve_336 magenta,default,solid,circle,1
+#
+section 185 force y tag curve_337
+section 185 force z tag curve_338
+operation div curve_337 4448 tag curve_339
+operation div curve_338 4448 tag curve_340
+delete curve_337 curve_338
+label curve_339  7.7 in-plane shear (kips)
+label curve_340  7.7 axial (kips)
+stylec curve_339 yellow,default,solid,circle,1
+stylec curve_340 orange,default,solid,circle,1
+#
+section 186 force y tag curve_341
+section 186 force z tag curve_342
+operation div curve_341 4448 tag curve_343
+operation div curve_342 4448 tag curve_344
+delete curve_341 curve_342
+label curve_343  7.8 in-plane shear (kips)
+label curve_344  7.8 axial (kips)
+stylec curve_343 purple,default,solid,circle,1
+stylec curve_344 white,default,solid,circle,1
+#
+section 187 force y tag curve_345
+section 187 force z tag curve_346
+operation div curve_345 4448 tag curve_347
+operation div curve_346 4448 tag curve_348
+delete curve_345 curve_346
+label curve_347  7.9 in-plane shear (kips)
+label curve_348  7.9 axial (kips)
+stylec curve_347 red,default,solid,circle,1
+stylec curve_348 green,default,solid,circle,1
+#
+section 188 force y tag curve_349
+section 188 force z tag curve_350
+operation div curve_349 4448 tag curve_351
+operation div curve_350 4448 tag curve_352
+delete curve_349 curve_350
+label curve_351  7.10. in-plane shear (kips)
+label curve_352  7.10. axial (kips)
+stylec curve_351 blue,default,solid,circle,1
+stylec curve_352 cyan,default,solid,circle,1
+#
+#
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default 14 foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        Title "Wall forces (kips)" \
+        title_on \
+        x_label "Time" \
+        x_label manual \
+        x_label on \
+        x_unit auto \
+        x_unit on \
+        y_label "Force (kips)" \
+        y_label manual \
+        y_label on \
+        y_unit auto \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min auto\
+        y2_max auto\
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid fine \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default 14 foreground \
+        font xlabel Default 14 foreground \
+        font ylabel Default 14 foreground \
+        font y2label Default 14 foreground \
+        font legend Default 14 foreground \
+        font xunit Default 14 foreground \
+        font yunit Default 14 foreground \
+        font y2unit Default 14 foreground
+#
+display curve_*
+#
+prefix model  1 M1
+#
+# Set all graphs active
+#
+layout graph select all

@@ -1,0 +1,217 @@
+# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to divtiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+# Job file:  "J:\S-F\230000\238558-00\4 Internal Project Data\4-04 Calculations\Struct\97 - LsDyna\0001_Results\r033_hs\REC01.ptf"
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page wide
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.09 1.00,0.34
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format scientific
+layout graph 1 x-axis precision 3
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 3
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+# User Defined Colours
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+contact 2 force y tag curve_1
+contact 3 force y tag curve_2
+contact 4 force y tag curve_3
+contact 5 force y tag curve_4
+contact 6 force y tag curve_5
+#
+# Operations for unblanked curves
+#
+operation div curve_1 4.44822 tag curve_6
+operation div curve_2 4.44822 tag curve_7
+operation div curve_3 4.44822 tag curve_8
+operation div curve_4 4.44822 tag curve_9
+operation div curve_5 4.44822 tag curve_10
+#
+# Delete working curves
+#
+delete curve_1 curve_2 curve_3 curve_4 curve_5
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default 14 foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Curve labels - (modified by user)
+#
+label curve_6  Pilaster 1 Y Force (kips)
+label curve_7  Pilaster 2 Y Force (kips)
+label curve_8  Pilaster 3 Y Force (kips)
+label curve_9  Pilaster 4 Y Force (kips)
+label curve_10  Pilaster 5 Y Force (kips)
+#
+# Curve Style definitions
+#
+stylec curve_6 white,default,solid,triangle,1
+stylec curve_7 red,default,solid,square,1
+stylec curve_8 green,default,solid,diamond,1
+stylec curve_9 blue,default,solid,hourglass,1
+stylec curve_10 cyan,default,solid,cross,1
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        Title "Pilaster Y Forces" \
+        title_on \
+        x_label auto \
+        x_label on \
+        x_unit "seconds" \
+        x_unit manual \
+        x_unit on \
+        y_label auto \
+        y_label on \
+        y_unit "kips" \
+        y_unit manual \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min  -1.000000 \
+        y2_max   1.000000 \
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid normal \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default 14 foreground \
+        font xlabel Default 14 foreground \
+        font ylabel Default 14 foreground \
+        font y2label Default 14 foreground \
+        font legend Default 14 foreground \
+        font xunit Default 14 foreground \
+        font yunit Default 14 foreground \
+        font y2unit Default 14 foreground
+#
+# User lines setup
+#
+#
+# Unblank curves in graph and set up axis labels and title
+#
+display curve_6 curve_7 curve_8 curve_9 curve_10
+#
+# User defined model prefix
+#
+prefix model  1 M1
+#
+# Generate Images
+#
+image i-resolution screen
+image png24 "script_output.png" graph 1
+#
+# Set all graphs active
+#
+layout graph select all
+#
+tab PilasterForceY.txt curve_* max maximum y value {label}
+#
+taba PilasterForceY.txt curve_* min minimum y value {label}
+#
+csv2 pilasterForceY.csv curve_* auto

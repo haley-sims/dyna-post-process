@@ -1,0 +1,228 @@
+# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to divtiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+# Job file:  "J:\S-F\230000\238558-00\4 Internal Project Data\4-04 Calculations\Struct\97 - LsDyna\0001_Results\r033_hs\REC01.ptf"
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page wide
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.09 1.00,0.34
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format scientific
+layout graph 1 x-axis precision 3
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 3
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+# User Defined Colours
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+contact 1001 force z tag curve_1
+contact 1002 force z tag curve_2
+contact 1003 force z tag curve_3
+contact 1004 force z tag curve_4
+contact 1005 force z tag curve_5
+contact 1006 force z tag curve_6
+contact 1007 force z tag curve_7
+contact 1008 force z tag curve_8
+contact 1009 force z tag curve_9
+#
+# Operations for unblanked curves
+#
+operation div curve_1 4.44822 tag curve_10
+operation div curve_2 4.44822 tag curve_11
+operation div curve_3 4.44822 tag curve_12
+operation div curve_4 4.44822 tag curve_13
+operation div curve_5 4.44822 tag curve_14
+operation div curve_6 4.44822 tag curve_15
+operation div curve_7 4.44822 tag curve_16
+operation div curve_8 4.44822 tag curve_17
+operation div curve_9 4.44822 tag curve_18
+#
+# Delete working curves
+#
+delete curve_1 curve_2 curve_3 curve_4 curve_5 curve_6 curve_7 curve_8 curve_9
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default 14 foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Curve labels - (modified by user)
+#
+label curve_10  Block 1 Force Z (kips)
+label curve_11  Block 2 Force Z (kips)
+label curve_12  Block 3 Force Z (kips)
+label curve_13  Block 4 Force Z (kips)
+label curve_14  Block 5 Force Z (kips)
+label curve_15  Block 6 Force Z (kips)
+label curve_16  Block 7 Force Z (kips)
+label curve_17  Block 8 Force Z (kips)
+label curve_18  Block 9 Force Z (kips)
+#
+# Curve Style definitions
+#
+stylec curve_10 green,default,dash,cross,1
+stylec curve_11 blue,default,dash,circle,1
+stylec curve_12 cyan,default,dash,star,1
+stylec curve_13 magenta,default,dash,dot,1
+stylec curve_14 white,default,solid,triangle,1
+stylec curve_15 red,default,solid,square,1
+stylec curve_16 green,default,solid,diamond,1
+stylec curve_17 blue,default,solid,hourglass,1
+stylec curve_18 cyan,default,solid,cross,1
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        Title "Contact Z Forces - Unit 5 Blocks" \
+        title_on \
+        x_label auto \
+        x_label on \
+        x_unit "seconds" \
+        x_unit manual \
+        x_unit on \
+        y_label auto \
+        y_label on \
+        y_unit "kips" \
+        y_unit manual \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min  -1.000000 \
+        y2_max   1.000000 \
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid normal \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default 14 foreground \
+        font xlabel Default 14 foreground \
+        font ylabel Default 14 foreground \
+        font y2label Default 14 foreground \
+        font legend Default 14 foreground \
+        font xunit Default 14 foreground \
+        font yunit Default 14 foreground \
+        font y2unit Default 14 foreground
+#
+# User lines setup
+#
+#
+# Unblank curves in graph and set up axis labels and title
+#
+display curve_10 curve_11 curve_12 curve_13 curve_14 curve_15 curve_16 curve_17 curve_18
+#
+# User defined model prefix
+#
+prefix model  1 M1
+#
+# Set all graphs active
+#
+layout graph select all
+#
+tab BlockForceZ.txt curve_* max maximum y value {label}
+#
+taba BlockForceZ.txt curve_* min minimum y value {label}
+#
+csv2 blockForceZ.csv curve_* auto

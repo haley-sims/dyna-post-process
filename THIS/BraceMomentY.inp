@@ -1,0 +1,241 @@
+0.7375# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to multiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+# Job file:  "J:\S-F\230000\238558-00\4 Internal Project Data\4-04 Calculations\Struct\97 - LsDyna\0001_Results\r033_hs\REC01.ptf"
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page wide
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.09 1.00,0.34
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format scientific
+layout graph 1 x-axis precision 3
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 3
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+# User Defined Colours
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+beam 181 moment y tag curve_1
+beam 182 moment y tag curve_2
+beam 183 moment y tag curve_3
+beam 184 moment y tag curve_4
+beam 185 moment y tag curve_5
+beam 186 moment y tag curve_6
+beam 187 moment y tag curve_7
+beam 188 moment y tag curve_8
+beam 189 moment y tag curve_9
+beam 190 moment y tag curve_10
+beam 191 moment y tag curve_11
+beam 192 moment y tag curve_12
+#
+# Operations for unblanked curves
+#
+operation mul curve_1 0.7375 tag curve_13
+operation mul curve_2 0.7375 tag curve_14
+operation mul curve_3 0.7375 tag curve_15
+operation mul curve_4 0.7375 tag curve_16
+operation mul curve_5 0.7375 tag curve_17
+operation mul curve_6 0.7375 tag curve_18
+operation mul curve_7 0.7375 tag curve_19
+operation mul curve_8 0.7375 tag curve_20
+operation mul curve_9 0.7375 tag curve_21
+operation mul curve_10 0.7375 tag curve_22
+operation mul curve_11 0.7375 tag curve_23
+operation mul curve_12 0.7375 tag curve_24
+#
+# Delete working curves
+#
+delete curve_1 curve_2 curve_3 curve_4 curve_5 curve_6 curve_7 curve_8 curve_9 curve_10
+delete curve_11 curve_12
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default 14 foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Curve labels - (modified by user)
+#
+label curve_13  Brace Beam 181 Moment Y (kip-ft)
+label curve_14  Brace Beam 182 Moment Y (kip-ft)
+label curve_15  Brace Beam 183 Moment Y (kip-ft)
+label curve_16  Brace Beam 184 Moment Y (kip-ft)
+label curve_17  Brace Beam 185 Moment Y (kip-ft)
+label curve_18  Brace Beam 186 Moment Y (kip-ft)
+label curve_19  Brace Beam 187 Moment Y (kip-ft)
+label curve_20  Brace Beam 188 Moment Y (kip-ft)
+label curve_21  Brace Beam 189 Moment Y (kip-ft)
+label curve_22  Brace Beam 190 Moment Y (kip-ft)
+label curve_23  Brace Beam 191 Moment Y (kip-ft)
+label curve_24  Brace Beam 192 Moment Y (kip-ft)
+#
+# Curve Style definitions
+#
+stylec curve_13 green,default,dash,cross,1
+stylec curve_14 blue,default,dash,circle,1
+stylec curve_15 cyan,default,dash,star,1
+stylec curve_16 magenta,default,dash,dot,1
+stylec curve_17 white,default,solid,triangle,1
+stylec curve_18 red,default,solid,square,1
+stylec curve_19 green,default,solid,diamond,1
+stylec curve_20 blue,default,solid,hourglass,1
+stylec curve_21 cyan,default,solid,cross,1
+stylec curve_22 magenta,default,solid,circle,1
+stylec curve_23 white,default,dash,star,1
+stylec curve_24 red,default,dash,dot,1
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        Title "Roof Brace Moment Y Forces" \
+        title_on \
+        x_label auto \
+        x_label on \
+        x_unit "seconds" \
+        x_unit manual \
+        x_unit on \
+        y_label auto \
+        y_label on \
+        y_unit "kip-ft" \
+        y_unit manual \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min  -1.000000 \
+        y2_max   1.000000 \
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid normal \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default 14 foreground \
+        font xlabel Default 14 foreground \
+        font ylabel Default 14 foreground \
+        font y2label Default 14 foreground \
+        font legend Default 14 foreground \
+        font xunit Default 14 foreground \
+        font yunit Default 14 foreground \
+        font y2unit Default 14 foreground
+#
+# User lines setup
+#
+#
+# Unblank curves in graph and set up axis labels and title
+#
+display curve_13 curve_14 curve_15 curve_16 curve_17 curve_18 curve_19 curve_20 curve_21 curve_22 curve_23 curve_24
+#
+# User defined model prefix
+#
+prefix model  1 M1
+#
+# Set all graphs active
+#
+layout graph select all
+#
+tab BraceMyy.txt curve_* max maximum y value {label}
+#
+taba BraceMyy.txt curve_* min minimum y value {label}
+#
+csv2 braceMyy.csv curve_* auto

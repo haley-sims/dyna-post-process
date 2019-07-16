@@ -1,0 +1,278 @@
+# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to multiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+# Job file:  "Z:\LS_Dyna_runs7\SCVMC\r037_hs\REC01.ptf"
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page 1x1
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.08 1.00,0.44
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format automatic
+layout graph 1 x-axis precision 3
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 3
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+# User Defined Colours
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+node 240789 displacement x tag curve_1
+node 334342 displacement x tag curve_2
+node 334698 displacement x tag curve_3
+node 386605 displacement x tag curve_4
+node 411947 displacement x tag curve_5
+node 432802 displacement x tag curve_6
+node 665159 displacement x tag curve_7
+node 686635 displacement x tag curve_8
+node 697670 displacement x tag curve_9
+node 240789 displacement y tag curve_10
+node 334342 displacement y tag curve_11
+node 334698 displacement y tag curve_12
+node 386605 displacement y tag curve_13
+node 411947 displacement y tag curve_14
+node 432802 displacement y tag curve_15
+node 665159 displacement y tag curve_16
+node 686635 displacement y tag curve_17
+node 697670 displacement y tag curve_18
+#
+# Operations for unblanked curves
+#
+operation sub curve_3 curve_5 tag curve_19
+operation div curve_19 4.05 tag curve_20
+operation sub curve_12 curve_14 tag curve_21
+operation div curve_21 4.05 tag curve_22
+operation sub curve_5 curve_1 tag curve_23
+operation div curve_23 4.11 tag curve_24
+operation sub curve_14 curve_10 tag curve_25
+operation div curve_25 4.11 tag curve_26
+operation sub curve_2 curve_6 tag curve_27
+operation div curve_27 4.05 tag curve_28
+operation sub curve_11 curve_15 tag curve_29
+operation div curve_29 4.05 tag curve_30
+operation sub curve_6 curve_1 tag curve_31
+operation div curve_31 4.11 tag curve_32
+operation sub curve_15 curve_10 tag curve_33
+operation div curve_33 4.11 tag curve_34
+operation sub curve_7 curve_4 tag curve_35
+operation div curve_35 4.05 tag curve_36
+operation sub curve_16 curve_13 tag curve_37
+operation div curve_37 4.05 tag curve_38
+operation sub curve_4 curve_1 tag curve_39
+operation div curve_39 4.11 tag curve_40
+operation sub curve_13 curve_10 tag curve_41
+operation div curve_41 4.11 tag curve_42
+operation sub curve_9 curve_8 tag curve_43
+operation div curve_43 4.05 tag curve_44
+operation sub curve_18 curve_17 tag curve_45
+operation div curve_45 4.05 tag curve_46
+operation sub curve_8 curve_1 tag curve_47
+operation div curve_47 4.11 tag curve_48
+operation sub curve_17 curve_10 tag curve_49
+operation div curve_49 4.11 tag curve_50
+#
+# Delete working curves
+#
+delete curve_1 curve_2 curve_3 curve_4 curve_5 curve_6 curve_7 curve_8 curve_9 curve_10
+delete curve_11 curve_12 curve_13 curve_14 curve_15 curve_16 curve_17 curve_18 curve_19 curve_21
+delete curve_23 curve_25 curve_27 curve_29 curve_31 curve_33 curve_35 curve_37 curve_39 curve_41
+delete curve_43 curve_45 curve_47 curve_49
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default Default foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Curve labels - (modified by user)
+#
+label curve_20  IDR B Roof X Direction
+label curve_22  IDR B Roof Y Direction
+label curve_24  IDR B Level 2 X Direction
+label curve_26  IDR B Level 2 Y Direction
+label curve_28  IDR D Roof X Direction
+label curve_30  IDR D Roof Y Direction
+label curve_32  IDR D Level 2 X Direction
+label curve_34  IDR D Level 2 Y Direction
+label curve_36  IDR A Roof X Direction
+label curve_38  IDR A Roof Y Direction
+label curve_40  IDR A Level 2 X Direction
+label curve_42  IDR A Level 2 Y Direction
+label curve_44  IDR C Roof X Direction
+label curve_46  IDR C Roof Y Direction
+label curve_48  IDR C Level 2 X Direction
+label curve_50  IDR C Level 2 Y Direction
+#
+# Curve Style definitions
+#
+stylec curve_20 red,default,solid,square,1
+stylec curve_22 cyan,default,solid,cross,1
+stylec curve_24 green,default,solid,diamond,1
+stylec curve_26 magenta,default,solid,circle,1
+stylec curve_28 green,default,solid,star,1
+stylec curve_30 cyan,default,solid,triangle,1
+stylec curve_32 blue,default,solid,dot,1
+stylec curve_34 magenta,default,solid,square,1
+stylec curve_36 blue,default,solid,hourglass,1
+stylec curve_38 magenta,default,solid,circle,1
+stylec curve_40 green,default,solid,diamond,1
+stylec curve_42 cyan,default,solid,cross,1
+stylec curve_44 blue,default,solid,dot,1
+stylec curve_46 magenta,default,solid,square,1
+stylec curve_48 green,default,solid,star,1
+stylec curve_50 cyan,default,solid,triangle,1
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        Title "Interstory Drift Unit 5" \
+        title_on \
+        x_label auto \
+        x_label on \
+        x_unit "seconds" \
+        x_unit manual \
+        x_unit on \
+        y_label "Drift Ratio" \
+        y_label manual \
+        y_label on \
+        y_unit " " \
+        y_unit manual \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min  -1.000000 \
+        y2_max   1.000000 \
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid normal \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default Default foreground \
+        font xlabel Default Default foreground \
+        font ylabel Default Default foreground \
+        font y2label Default Default foreground \
+        font legend Default Default foreground \
+        font xunit Default Default foreground \
+        font yunit Default Default foreground \
+        font y2unit Default Default foreground
+#
+# User lines setup
+#
+#
+# Unblank curves in graph and set up axis labels and title
+#
+display curve_20 curve_22 curve_24 curve_26 curve_28 curve_30 curve_32 curve_34 curve_36 curve_38 curve_40 curve_42 curve_44 curve_46 curve_48 curve_50
+#
+# User defined model prefix
+#
+prefix model  1 M1
+#
+# Set all graphs active
+#
+layout graph select all
+#
+tab Unit5IDR.txt IDR* max maximum y value {label}
+#
+taba Unit5IDR.txt IDR* min minimum y value {label}
+#
+csv2 unit5IDR.csv curve_* auto

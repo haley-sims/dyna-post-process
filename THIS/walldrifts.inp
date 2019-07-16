@@ -1,0 +1,868 @@
+# Program:  FASTTCF
+# Filetype:  Postscript
+# Filename:  script_output.png
+#
+# Built in variables:
+# ==================
+# $ftcf_script: Name of the FAST-TCF that is being run.
+# $ftcf_script_dir: Name of the FAST-TCF directory.
+# $ftcf_dir: Name of the current working directory.
+# $ftcf_path: Full pathname of the current working directory.
+# $ftcf_startin_dir: Directory T/HIS was started from.
+#
+# $run_name: Basename of the key file for the first model.
+# $run_dir: Full pathname of output file directory.
+# $run_title: Title of the analysis found in the output files.
+#
+# If a script refers to multiple models then, $run_nameN,
+# $run_dirN, $run_titleN (where N is the model number) can
+# be used for each model.
+#
+version 16.0
+#
+# Create additional graphs
+#
+layout graph total  1
+#
+# Setup page layouts
+#
+layout page wide
+#
+# Setup toolbar visibility
+#
+layout graphs toolbar show
+#
+# Remove graphs from all pages
+#
+layout page all none
+layout page 1 add graph  1
+layout page 1 graph  1 position 0.00,-.08 1.00,0.45
+#
+# Setup axis positions and properties
+#
+layout graph 1 axis position auto auto auto auto
+layout graph 1 x-axis format automatic
+layout graph 1 x-axis precision 1
+layout graph 1 y-axis format automatic
+layout graph 1 y-axis precision 1
+#
+# Setup legend format and position
+#
+layout graph 1 legend format column
+layout graph 1 legend columns 2
+#
+#
+# Read data from models and files
+#
+model none
+model 1
+node 242417 displacement x tag curve_1
+node 242431 displacement x tag curve_2
+operation sub curve_2 curve_1 tag curve_3
+operation div curve_3 2.0498 tag curve_4
+delete curve_1 curve_2 curve_3
+label curve_4  P1 drift ratio
+stylec curve_4 white,default,solid,circle,1
+#
+node 495310 displacement x tag curve_5
+node 495275 displacement x tag curve_6
+operation sub curve_6 curve_5 tag curve_7
+operation div curve_7 2.0382 tag curve_8
+delete curve_5 curve_6 curve_7
+label curve_8  P2 drift ratio
+stylec curve_8 red,default,solid,circle,1
+#
+node 721577 displacement x tag curve_9
+node 721598 displacement x tag curve_10
+operation sub curve_10 curve_9 tag curve_11
+operation div curve_11 2.0143 tag curve_12
+delete curve_9 curve_10 curve_11
+label curve_12  P3 drift ratio
+stylec curve_12 green,default,solid,circle,1
+#
+node 721622 displacement x tag curve_13
+node 721643 displacement x tag curve_14
+operation sub curve_14 curve_13 tag curve_15
+operation div curve_15 2.0143 tag curve_16
+delete curve_13 curve_14 curve_15
+label curve_16  P4 drift ratio
+stylec curve_16 blue,default,solid,circle,1
+#
+node 242606 displacement x tag curve_17
+node 242561 displacement x tag curve_18
+operation sub curve_18 curve_17 tag curve_19
+operation div curve_19 2.1427 tag curve_20
+delete curve_17 curve_18 curve_19
+label curve_20  P5 drift ratio
+stylec curve_20 cyan,default,solid,circle,1
+#
+node 242827 displacement x tag curve_21
+node 242847 displacement x tag curve_22
+operation sub curve_22 curve_21 tag curve_23
+operation div curve_23 2.1329 tag curve_24
+delete curve_21 curve_22 curve_23
+label curve_24  P6 drift ratio
+stylec curve_24 magenta,default,solid,circle,1
+#
+node 503966 displacement x tag curve_25
+node 503956 displacement x tag curve_26
+operation sub curve_26 curve_25 tag curve_27
+operation div curve_27 2.0745 tag curve_28
+delete curve_25 curve_26 curve_27
+label curve_28  P7 drift ratio
+stylec curve_28 yellow,default,solid,circle,1
+#
+node 240883 displacement x tag curve_29
+node 240860 displacement x tag curve_30
+operation sub curve_30 curve_29 tag curve_31
+operation div curve_31 3.3256 tag curve_32
+delete curve_29 curve_30 curve_31
+label curve_32  P8 drift ratio
+stylec curve_32 orange,default,solid,circle,1
+#
+node 721724 displacement x tag curve_33
+node 721703 displacement x tag curve_34
+operation sub curve_34 curve_33 tag curve_35
+operation div curve_35 1.5349 tag curve_36
+delete curve_33 curve_34 curve_35
+label curve_36  P9 drift ratio
+stylec curve_36 purple,default,solid,circle,1
+#
+node 721683 displacement x tag curve_37
+node 721663 displacement x tag curve_38
+operation sub curve_38 curve_37 tag curve_39
+operation div curve_39 1.5349 tag curve_40
+delete curve_37 curve_38 curve_39
+label curve_40  P10 drift ratio
+stylec curve_40 white,default,solid,circle,1
+#
+node 241895 displacement x tag curve_41
+node 241502 displacement x tag curve_42
+operation sub curve_42 curve_41 tag curve_43
+operation div curve_43 3.3256 tag curve_44
+delete curve_41 curve_42 curve_43
+label curve_44  P11 drift ratio
+stylec curve_44 red,default,solid,circle,1
+#
+node 629358 displacement x tag curve_45
+node 685762 displacement x tag curve_46
+operation sub curve_46 curve_45 tag curve_47
+operation div curve_47 4.0341 tag curve_48
+delete curve_45 curve_46 curve_47
+label curve_48  H1 drift ratio
+stylec curve_48 green,default,solid,circle,1
+#
+node 511619 displacement x tag curve_49
+node 511655 displacement x tag curve_50
+operation sub curve_50 curve_49 tag curve_51
+operation div curve_51 1.9147 tag curve_52
+delete curve_49 curve_50 curve_51
+label curve_52  H2 drift ratio
+stylec curve_52 blue,default,solid,circle,1
+#
+node 266591 displacement x tag curve_53
+node 266583 displacement x tag curve_54
+operation sub curve_54 curve_53 tag curve_55
+operation div curve_55 1.6677 tag curve_56
+delete curve_53 curve_54 curve_55
+label curve_56  H3 drift ratio
+stylec curve_56 cyan,default,solid,circle,1
+#
+node 360585 displacement x tag curve_57
+node 360596 displacement x tag curve_58
+operation sub curve_58 curve_57 tag curve_59
+operation div curve_59 1.6639 tag curve_60
+delete curve_57 curve_58 curve_59
+label curve_60  H4 drift ratio
+stylec curve_60 magenta,default,solid,circle,1
+#
+node 686228 displacement x tag curve_61
+node 441696 displacement x tag curve_62
+operation sub curve_62 curve_61 tag curve_63
+operation div curve_63 3.8575 tag curve_64
+delete curve_61 curve_62 curve_63
+label curve_64  H5 drift ratio
+stylec curve_64 yellow,default,solid,circle,1
+#
+node 494069 displacement x tag curve_65
+node 493856 displacement x tag curve_66
+operation sub curve_66 curve_65 tag curve_67
+operation div curve_67 3.8728 tag curve_68
+delete curve_65 curve_66 curve_67
+label curve_68  H6 drift ratio
+stylec curve_68 orange,default,solid,circle,1
+#
+node 266316 displacement x tag curve_69
+node 265743 displacement x tag curve_70
+operation sub curve_70 curve_69 tag curve_71
+operation div curve_71 3.8728 tag curve_72
+delete curve_69 curve_70 curve_71
+label curve_72  H7 drift ratio
+stylec curve_72 purple,default,solid,circle,1
+#
+node 364139 displacement x tag curve_73
+node 364030 displacement x tag curve_74
+operation sub curve_74 curve_73 tag curve_75
+operation div curve_75 5.0544 tag curve_76
+delete curve_73 curve_74 curve_75
+label curve_76  K1 drift ratio
+stylec curve_76 white,default,solid,circle,1
+#
+node 364030 displacement x tag curve_77
+node 364024 displacement x tag curve_78
+operation sub curve_78 curve_77 tag curve_79
+operation div curve_79 4.1148 tag curve_80
+delete curve_77 curve_78 curve_79
+label curve_80  K2 drift ratio
+stylec curve_80 red,default,solid,circle,1
+#
+node 338924 displacement x tag curve_81
+node 660946 displacement x tag curve_82
+operation sub curve_82 curve_81 tag curve_83
+operation div curve_83 5.0925 tag curve_84
+delete curve_81 curve_82 curve_83
+label curve_84  L1 drift ratio
+stylec curve_84 green,default,solid,circle,1
+#
+node 327882 displacement x tag curve_85
+node 660385 displacement x tag curve_86
+operation sub curve_86 curve_85 tag curve_87
+operation div curve_87 5.0939 tag curve_88
+delete curve_85 curve_86 curve_87
+label curve_88  M1 drift ratio
+stylec curve_88 blue,default,solid,circle,1
+#
+node 478100 displacement x tag curve_89
+node 402008 displacement x tag curve_90
+operation sub curve_90 curve_89 tag curve_91
+operation div curve_91 5.0539 tag curve_92
+delete curve_89 curve_90 curve_91
+label curve_92  N1 drift ratio
+stylec curve_92 cyan,default,solid,circle,1
+#
+node 402008 displacement x tag curve_93
+node 476755 displacement x tag curve_94
+operation sub curve_94 curve_93 tag curve_95
+operation div curve_95 4.1148 tag curve_96
+delete curve_93 curve_94 curve_95
+label curve_96  N2 drift ratio
+stylec curve_96 magenta,default,solid,circle,1
+#
+node 513694 displacement x tag curve_97
+node 514067 displacement x tag curve_98
+operation sub curve_98 curve_97 tag curve_99
+operation div curve_99 4.1148 tag curve_100
+delete curve_97 curve_98 curve_99
+label curve_100  C1 drift ratio
+stylec curve_100 yellow,default,solid,circle,1
+#
+node 324179 displacement y tag curve_101
+node 324204 displacement y tag curve_102
+operation sub curve_102 curve_101 tag curve_103
+operation div curve_103 2.4686 tag curve_104
+delete curve_101 curve_102 curve_103
+label curve_104  0.1 drift ratio
+stylec curve_104 orange,default,solid,circle,1
+#
+node 322704 displacement y tag curve_105
+node 322746 displacement y tag curve_106
+operation sub curve_106 curve_105 tag curve_107
+operation div curve_107 2.6475 tag curve_108
+delete curve_105 curve_106 curve_107
+label curve_108  0.2 drift ratio
+stylec curve_108 purple,default,solid,circle,1
+#
+node 322487 displacement y tag curve_109
+node 322515 displacement y tag curve_110
+operation sub curve_110 curve_109 tag curve_111
+operation div curve_111 2.6731 tag curve_112
+delete curve_109 curve_110 curve_111
+label curve_112  0.3 drift ratio
+stylec curve_112 white,default,solid,circle,1
+#
+node 322069 displacement y tag curve_113
+node 560798 displacement y tag curve_114
+operation sub curve_114 curve_113 tag curve_115
+operation div curve_115 2.9235 tag curve_116
+delete curve_113 curve_114 curve_115
+label curve_116  0.4 drift ratio
+stylec curve_116 red,default,solid,circle,1
+#
+node 606251 displacement y tag curve_117
+node 606213 displacement y tag curve_118
+operation sub curve_118 curve_117 tag curve_119
+operation div curve_119 2.6827 tag curve_120
+delete curve_117 curve_118 curve_119
+label curve_120  0.5 drift ratio
+stylec curve_120 green,default,solid,circle,1
+#
+node 321189 displacement y tag curve_121
+node 557530 displacement y tag curve_122
+operation sub curve_122 curve_121 tag curve_123
+operation div curve_123 2.6475 tag curve_124
+delete curve_121 curve_122 curve_123
+label curve_124  0.6 drift ratio
+stylec curve_124 blue,default,solid,circle,1
+#
+node 602563 displacement y tag curve_125
+node 602714 displacement y tag curve_126
+operation sub curve_126 curve_125 tag curve_127
+operation div curve_127 2.6742 tag curve_128
+delete curve_125 curve_126 curve_127
+label curve_128  0.7 drift ratio
+stylec curve_128 cyan,default,solid,circle,1
+#
+node 180036 displacement y tag curve_129
+node 323566 displacement y tag curve_130
+operation sub curve_130 curve_129 tag curve_131
+operation div curve_131 2.6973 tag curve_132
+delete curve_129 curve_130 curve_131
+label curve_132  0.8 drift ratio
+stylec curve_132 magenta,default,solid,circle,1
+#
+node 324976 displacement y tag curve_133
+node 323885 displacement y tag curve_134
+operation sub curve_134 curve_133 tag curve_135
+operation div curve_135 3.8659 tag curve_136
+delete curve_133 curve_134 curve_135
+label curve_136  0.9 drift ratio
+stylec curve_136 yellow,default,solid,circle,1
+#
+node 293496 displacement y tag curve_137
+node 318867 displacement y tag curve_138
+operation sub curve_138 curve_137 tag curve_139
+operation div curve_139 2.6183 tag curve_140
+delete curve_137 curve_138 curve_139
+label curve_140  0.10. drift ratio
+stylec curve_140 orange,default,solid,circle,1
+#
+node 293530 displacement y tag curve_141
+node 318655 displacement y tag curve_142
+operation sub curve_142 curve_141 tag curve_143
+operation div curve_143 2.6489 tag curve_144
+delete curve_141 curve_142 curve_143
+label curve_144  0.11 drift ratio
+stylec curve_144 purple,default,solid,circle,1
+#
+node 320794 displacement y tag curve_145
+node 316970 displacement y tag curve_146
+operation sub curve_146 curve_145 tag curve_147
+operation div curve_147 3.883 tag curve_148
+delete curve_145 curve_146 curve_147
+label curve_148  0.12 drift ratio
+stylec curve_148 white,default,solid,circle,1
+#
+node 598367 displacement y tag curve_149
+node 597260 displacement y tag curve_150
+operation sub curve_150 curve_149 tag curve_151
+operation div curve_151 2.935 tag curve_152
+delete curve_149 curve_150 curve_151
+label curve_152  0.13 drift ratio
+stylec curve_152 red,default,solid,circle,1
+#
+node 293652 displacement y tag curve_153
+node 317809 displacement y tag curve_154
+operation sub curve_154 curve_153 tag curve_155
+operation div curve_155 2.6183 tag curve_156
+delete curve_153 curve_154 curve_155
+label curve_156  0.14 drift ratio
+stylec curve_156 green,default,solid,circle,1
+#
+node 599214 displacement y tag curve_157
+node 599379 displacement y tag curve_158
+operation sub curve_158 curve_157 tag curve_159
+operation div curve_159 2.6564 tag curve_160
+delete curve_157 curve_158 curve_159
+label curve_160  0.15 drift ratio
+stylec curve_160 blue,default,solid,circle,1
+#
+node 314315 displacement y tag curve_161
+node 222649 displacement y tag curve_162
+operation sub curve_162 curve_161 tag curve_163
+operation div curve_163 3.2194 tag curve_164
+delete curve_161 curve_162 curve_163
+label curve_164  1.2-c drift ratio
+stylec curve_164 cyan,default,solid,circle,1
+#
+node 216703 displacement y tag curve_165
+node 532336 displacement y tag curve_166
+operation sub curve_166 curve_165 tag curve_167
+operation div curve_167 3.4671 tag curve_168
+delete curve_165 curve_166 curve_167
+label curve_168  1.3-c drift ratio
+stylec curve_168 magenta,default,solid,circle,1
+#
+node 216478 displacement y tag curve_169
+node 218519 displacement y tag curve_170
+operation sub curve_170 curve_169 tag curve_171
+operation div curve_171 3.2195 tag curve_172
+delete curve_169 curve_170 curve_171
+label curve_172  1.4-c drift ratio
+stylec curve_172 yellow,default,solid,circle,1
+#
+node 216516 displacement y tag curve_173
+node 216938 displacement y tag curve_174
+operation sub curve_174 curve_173 tag curve_175
+operation div curve_175 3.2195 tag curve_176
+delete curve_173 curve_174 curve_175
+label curve_176  1.5-c drift ratio
+stylec curve_176 orange,default,solid,circle,1
+#
+node 216559 displacement y tag curve_177
+node 557572 displacement y tag curve_178
+operation sub curve_178 curve_177 tag curve_179
+operation div curve_179 3.2195 tag curve_180
+delete curve_177 curve_178 curve_179
+label curve_180  1.6-c drift ratio
+stylec curve_180 purple,default,solid,circle,1
+#
+node 216606 displacement y tag curve_181
+node 217273 displacement y tag curve_182
+operation sub curve_182 curve_181 tag curve_183
+operation div curve_183 3.2195 tag curve_184
+delete curve_181 curve_182 curve_183
+label curve_184  1.7-c drift ratio
+stylec curve_184 white,default,solid,circle,1
+#
+node 216279 displacement y tag curve_185
+node 216304 displacement y tag curve_186
+operation sub curve_186 curve_185 tag curve_187
+operation div curve_187 3.2195 tag curve_188
+delete curve_185 curve_186 curve_187
+label curve_188  1.8-c drift ratio
+stylec curve_188 red,default,solid,circle,1
+#
+node 225730 displacement y tag curve_189
+node 221865 displacement y tag curve_190
+operation sub curve_190 curve_189 tag curve_191
+operation div curve_191 4.318 tag curve_192
+delete curve_189 curve_190 curve_191
+label curve_192  1.9-c drift ratio
+stylec curve_192 green,default,solid,circle,1
+#
+node 226578 displacement y tag curve_193
+node 222217 displacement y tag curve_194
+operation sub curve_194 curve_193 tag curve_195
+operation div curve_195 4.318 tag curve_196
+delete curve_193 curve_194 curve_195
+label curve_196  1.10-c drift ratio
+stylec curve_196 blue,default,solid,circle,1
+#
+node 590015 displacement y tag curve_197
+node 565742 displacement y tag curve_198
+operation sub curve_198 curve_197 tag curve_199
+operation div curve_199 3.5935 tag curve_200
+delete curve_197 curve_198 curve_199
+label curve_200  1.11-c drift ratio
+stylec curve_200 cyan,default,solid,circle,1
+#
+node 589355 displacement y tag curve_201
+node 589166 displacement y tag curve_202
+operation sub curve_202 curve_201 tag curve_203
+operation div curve_203 3.6005 tag curve_204
+delete curve_201 curve_202 curve_203
+label curve_204  1.12-c drift ratio
+stylec curve_204 magenta,default,solid,circle,1
+#
+node 580309 displacement y tag curve_205
+node 579361 displacement y tag curve_206
+operation sub curve_206 curve_205 tag curve_207
+operation div curve_207 3.6005 tag curve_208
+delete curve_205 curve_206 curve_207
+label curve_208  1.13-c drift ratio
+stylec curve_208 yellow,default,solid,circle,1
+#
+node 235259 displacement y tag curve_209
+node 227434 displacement y tag curve_210
+operation sub curve_210 curve_209 tag curve_211
+operation div curve_211 4.1682 tag curve_212
+delete curve_209 curve_210 curve_211
+label curve_212  1.1-5 drift ratio
+stylec curve_212 orange,default,solid,circle,1
+#
+node 235927 displacement y tag curve_213
+node 228967 displacement y tag curve_214
+operation sub curve_214 curve_213 tag curve_215
+operation div curve_215 4.8034 tag curve_216
+delete curve_213 curve_214 curve_215
+label curve_216  1.2-5 drift ratio
+stylec curve_216 purple,default,solid,circle,1
+#
+node 696383 displacement y tag curve_217
+node 233029 displacement y tag curve_218
+operation sub curve_218 curve_217 tag curve_219
+operation div curve_219 4.8213 tag curve_220
+delete curve_217 curve_218 curve_219
+label curve_220  1.3-5 drift ratio
+stylec curve_220 white,default,solid,circle,1
+#
+node 227529 displacement y tag curve_221
+node 231314 displacement y tag curve_222
+operation sub curve_222 curve_221 tag curve_223
+operation div curve_223 4.1148 tag curve_224
+delete curve_221 curve_222 curve_223
+label curve_224  1.9-5 drift ratio
+stylec curve_224 red,default,solid,circle,1
+#
+node 232582 displacement y tag curve_225
+node 231606 displacement y tag curve_226
+operation sub curve_226 curve_225 tag curve_227
+operation div curve_227 4.1148 tag curve_228
+delete curve_225 curve_226 curve_227
+label curve_228  1.10-5 drift ratio
+stylec curve_228 green,default,solid,circle,1
+#
+node 233029 displacement y tag curve_229
+node 231041 displacement y tag curve_230
+operation sub curve_230 curve_229 tag curve_231
+operation div curve_231 3.8575 tag curve_232
+delete curve_229 curve_230 curve_231
+label curve_232  1.11-5 drift ratio
+stylec curve_232 blue,default,solid,circle,1
+#
+node 386180 displacement y tag curve_233
+node 386129 displacement y tag curve_234
+operation sub curve_234 curve_233 tag curve_235
+operation div curve_235 3.8728 tag curve_236
+delete curve_233 curve_234 curve_235
+label curve_236  1.12-5 drift ratio
+stylec curve_236 cyan,default,solid,circle,1
+#
+node 273179 displacement y tag curve_237
+node 272957 displacement y tag curve_238
+operation sub curve_238 curve_237 tag curve_239
+operation div curve_239 4.1148 tag curve_240
+delete curve_237 curve_238 curve_239
+label curve_240  2.1 drift ratio
+stylec curve_240 magenta,default,solid,circle,1
+#
+node 375484 displacement y tag curve_241
+node 375491 displacement y tag curve_242
+operation sub curve_242 curve_241 tag curve_243
+operation div curve_243 1.687 tag curve_244
+delete curve_241 curve_242 curve_243
+label curve_244  3.3-1 drift ratio
+stylec curve_244 yellow,default,solid,circle,1
+#
+node 375444 displacement y tag curve_245
+node 375433 displacement y tag curve_246
+operation sub curve_246 curve_245 tag curve_247
+operation div curve_247 1.543 tag curve_248
+delete curve_245 curve_246 curve_247
+label curve_248  3.3-2 drift ratio
+stylec curve_248 orange,default,solid,circle,1
+#
+node 267511 displacement y tag curve_249
+node 267548 displacement y tag curve_250
+operation sub curve_250 curve_249 tag curve_251
+operation div curve_251 1.686 tag curve_252
+delete curve_249 curve_250 curve_251
+label curve_252  5.1 drift ratio
+stylec curve_252 purple,default,solid,circle,1
+#
+node 267670 displacement y tag curve_253
+node 267742 displacement y tag curve_254
+operation sub curve_254 curve_253 tag curve_255
+operation div curve_255 1.6964 tag curve_256
+delete curve_253 curve_254 curve_255
+label curve_256  5.2 drift ratio
+stylec curve_256 white,default,solid,circle,1
+#
+node 267945 displacement y tag curve_257
+node 267928 displacement y tag curve_258
+operation sub curve_258 curve_257 tag curve_259
+operation div curve_259 2.6518 tag curve_260
+delete curve_257 curve_258 curve_259
+label curve_260  5.3 drift ratio
+stylec curve_260 red,default,solid,circle,1
+#
+node 451794 displacement y tag curve_261
+node 268378 displacement y tag curve_262
+operation sub curve_262 curve_261 tag curve_263
+operation div curve_263 2.6506 tag curve_264
+delete curve_261 curve_262 curve_263
+label curve_264  5.4 drift ratio
+stylec curve_264 green,default,solid,circle,1
+#
+node 451979 displacement y tag curve_265
+node 451972 displacement y tag curve_266
+operation sub curve_266 curve_265 tag curve_267
+operation div curve_267 1.6887 tag curve_268
+delete curve_265 curve_266 curve_267
+label curve_268  5.5 drift ratio
+stylec curve_268 blue,default,solid,circle,1
+#
+node 258156 displacement y tag curve_269
+node 258184 displacement y tag curve_270
+operation sub curve_270 curve_269 tag curve_271
+operation div curve_271 2.1996 tag curve_272
+delete curve_269 curve_270 curve_271
+label curve_272  6.1 drift ratio
+stylec curve_272 cyan,default,solid,circle,1
+#
+node 256259 displacement y tag curve_273
+node 256269 displacement y tag curve_274
+operation sub curve_274 curve_273 tag curve_275
+operation div curve_275 2.3924 tag curve_276
+delete curve_273 curve_274 curve_275
+label curve_276  6.2 drift ratio
+stylec curve_276 magenta,default,solid,circle,1
+#
+node 256166 displacement y tag curve_277
+node 256133 displacement y tag curve_278
+operation sub curve_278 curve_277 tag curve_279
+operation div curve_279 2.2234 tag curve_280
+delete curve_277 curve_278 curve_279
+label curve_280  6.3 drift ratio
+stylec curve_280 yellow,default,solid,circle,1
+#
+node 255693 displacement y tag curve_281
+node 255687 displacement y tag curve_282
+operation sub curve_282 curve_281 tag curve_283
+operation div curve_283 2.5717 tag curve_284
+delete curve_281 curve_282 curve_283
+label curve_284  6.4 drift ratio
+stylec curve_284 orange,default,solid,circle,1
+#
+node 255386 displacement y tag curve_285
+node 251104 displacement y tag curve_286
+operation sub curve_286 curve_285 tag curve_287
+operation div curve_287 2.3146 tag curve_288
+delete curve_285 curve_286 curve_287
+label curve_288  6.5 drift ratio
+stylec curve_288 purple,default,solid,circle,1
+#
+node 364274 displacement y tag curve_289
+node 364289 displacement y tag curve_290
+operation sub curve_290 curve_289 tag curve_291
+operation div curve_291 1.781 tag curve_292
+delete curve_289 curve_290 curve_291
+label curve_292  6.7 drift ratio
+stylec curve_292 white,default,solid,circle,1
+#
+node 250786 displacement y tag curve_293
+node 250740 displacement y tag curve_294
+operation sub curve_294 curve_293 tag curve_295
+operation div curve_295 1.9477 tag curve_296
+delete curve_293 curve_294 curve_295
+label curve_296  6.8 drift ratio
+stylec curve_296 red,default,solid,circle,1
+#
+node 250538 displacement y tag curve_297
+node 250509 displacement y tag curve_298
+operation sub curve_298 curve_297 tag curve_299
+operation div curve_299 1.9099 tag curve_300
+delete curve_297 curve_298 curve_299
+label curve_300  6.9 drift ratio
+stylec curve_300 green,default,solid,circle,1
+#
+node 257598 displacement y tag curve_301
+node 257612 displacement y tag curve_302
+operation sub curve_302 curve_301 tag curve_303
+operation div curve_303 1.5719 tag curve_304
+delete curve_301 curve_302 curve_303
+label curve_304  6.10. drift ratio
+stylec curve_304 blue,default,solid,circle,1
+#
+node 257816 displacement y tag curve_305
+node 257809 displacement y tag curve_306
+operation sub curve_306 curve_305 tag curve_307
+operation div curve_307 1.6924 tag curve_308
+delete curve_305 curve_306 curve_307
+label curve_308  6.11 drift ratio
+stylec curve_308 cyan,default,solid,circle,1
+#
+node 257504 displacement y tag curve_309
+node 257515 displacement y tag curve_310
+operation sub curve_310 curve_309 tag curve_311
+operation div curve_311 1.6871 tag curve_312
+delete curve_309 curve_310 curve_311
+label curve_312  6.12 drift ratio
+stylec curve_312 magenta,default,solid,circle,1
+#
+node 521345 displacement y tag curve_313
+node 521326 displacement y tag curve_314
+operation sub curve_314 curve_313 tag curve_315
+operation div curve_315 1.7827 tag curve_316
+delete curve_313 curve_314 curve_315
+label curve_316  7.1 drift ratio
+stylec curve_316 yellow,default,solid,circle,1
+#
+node 253566 displacement y tag curve_317
+node 253517 displacement y tag curve_318
+operation sub curve_318 curve_317 tag curve_319
+operation div curve_319 1.9324 tag curve_320
+delete curve_317 curve_318 curve_319
+label curve_320  7.2 drift ratio
+stylec curve_320 orange,default,solid,circle,1
+#
+node 252004 displacement y tag curve_321
+node 252012 displacement y tag curve_322
+operation sub curve_322 curve_321 tag curve_323
+operation div curve_323 2.039 tag curve_324
+delete curve_321 curve_322 curve_323
+label curve_324  7.3 drift ratio
+stylec curve_324 purple,default,solid,circle,1
+#
+node 252173 displacement y tag curve_325
+node 252134 displacement y tag curve_326
+operation sub curve_326 curve_325 tag curve_327
+operation div curve_327 2.03 tag curve_328
+delete curve_325 curve_326 curve_327
+label curve_328  7.4 drift ratio
+stylec curve_328 white,default,solid,circle,1
+#
+node 252735 displacement y tag curve_329
+node 252743 displacement y tag curve_330
+operation sub curve_330 curve_329 tag curve_331
+operation div curve_331 1.987 tag curve_332
+delete curve_329 curve_330 curve_331
+label curve_332  7.5 drift ratio
+stylec curve_332 red,default,solid,circle,1
+#
+node 252585 displacement y tag curve_333
+node 252549 displacement y tag curve_334
+operation sub curve_334 curve_333 tag curve_335
+operation div curve_335 1.879 tag curve_336
+delete curve_333 curve_334 curve_335
+label curve_336  7.6 drift ratio
+stylec curve_336 green,default,solid,circle,1
+#
+node 399745 displacement y tag curve_337
+node 399728 displacement y tag curve_338
+operation sub curve_338 curve_337 tag curve_339
+operation div curve_339 1.5794 tag curve_340
+delete curve_337 curve_338 curve_339
+label curve_340  7.7 drift ratio
+stylec curve_340 blue,default,solid,circle,1
+#
+node 428566 displacement y tag curve_341
+node 254611 displacement y tag curve_342
+operation sub curve_342 curve_341 tag curve_343
+operation div curve_343 4.1148 tag curve_344
+delete curve_341 curve_342 curve_343
+label curve_344  7.8 drift ratio
+stylec curve_344 cyan,default,solid,circle,1
+#
+node 253915 displacement y tag curve_345
+node 253923 displacement y tag curve_346
+operation sub curve_346 curve_345 tag curve_347
+operation div curve_347 1.9364 tag curve_348
+delete curve_345 curve_346 curve_347
+label curve_348  7.9 drift ratio
+stylec curve_348 magenta,default,solid,circle,1
+#
+node 257435 displacement y tag curve_349
+node 257410 displacement y tag curve_350
+operation sub curve_350 curve_349 tag curve_351
+operation div curve_351 2.314 tag curve_352
+delete curve_349 curve_350 curve_351
+label curve_352  7.10. drift ratio
+stylec curve_352 yellow,default,solid,circle,1
+#
+#
+condense
+#
+# Curve and Legend Properties
+#
+properties format font Default 14 foreground
+properties format background background
+properties format border foreground off
+properties format border fine
+properties format arrow off
+properties format transparency 0
+properties format number y_only
+properties format value scientific
+properties format precision 3
+#
+properties legend format append
+properties legend * ## maximum off
+properties legend * ## minimum off
+properties legend * ## average off
+properties legend * ## hic off
+properties legend * ## clip off
+properties legend * ## thiv off
+properties legend * ## phd off
+#
+properties curves format off
+properties curves summary smaximum off
+properties curves summary sminimum off
+properties curves summary lmaximum off
+properties curves summary lminimum off
+properties curves * ## smaximum off
+properties curves * ## lmaximum off
+properties curves * ## sminimum off
+properties curves * ## lminimum off
+#
+# Select graph  1
+#
+layout graph select none
+layout graph select  1
+#
+# Plot setup
+#
+setup \
+        Title "Wall pier rotation (ratio)" \
+        title_on \
+        x_label "Time" \
+        x_label manual \
+        x_label on \
+        x_unit auto \
+        x_unit on \
+        y_label \"Drift ratio" \
+        y_label manual \
+        y_label on \
+        y_unit auto \
+        y_unit on \
+        y2_label auto \
+        y2_label on \
+        y2_unit auto \
+        y2_unit on \
+        x_min auto\
+        x_max auto\
+        y_min auto\
+        y_max auto\
+        y2_min auto\
+        y2_max auto\
+        y2_align off \
+        axis normal \
+        axis foreground\
+        double off \
+        border on \
+        border normal \
+        border foreground\
+        axis top on \
+        axis right on \
+        background black\
+        foreground white\
+        grid on \
+        grid fine \
+        grid foreground\
+        symbols off \
+        solid off \
+        line normal \
+        line on \
+        fix off \
+        xlin \
+        ylin \
+        y2lin \
+        mp auto \
+        prefix id \
+        Xauto \
+        Yauto \
+        font title Default 14 foreground \
+        font xlabel Default 14 foreground \
+        font ylabel Default 14 foreground \
+        font y2label Default 14 foreground \
+        font legend Default 14 foreground \
+        font xunit Default 14 foreground \
+        font yunit Default 14 foreground \
+        font y2unit Default 14 foreground
+#
+display curve_*
+#
+prefix model  1 M1
+#
+# Set all graphs active
+#
+layout graph select all
