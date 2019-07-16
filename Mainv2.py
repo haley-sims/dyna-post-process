@@ -8,8 +8,9 @@ from tkinter import filedialog
 import math
 import os
 import openpyxl as op
+import pandas as pd
 
-from AllResults import AllResults
+from postProcessTHIS import postProcessTHIS
 from saveCurrentResults import saveCurrentResults
 from BaseShear import BaseShear
 from BraceDesign import BraceDesign
@@ -21,28 +22,22 @@ from IDR import IDR
 from ElasticColumnDesign import ElasticColumnDesign
 
 #call function to create all results CSVs
-# thisLoc, runName, groundMotion= AllResults()
+# thisLoc, runName, groundMotion= postProcessTHIS()
 thisLoc = os.path.dirname(filedialog.askopenfilename())
 runName = 'r046_hs'
 groundMotion = 'REC03DC'
 
-#create new Worksheet with results summary
-resultsFolder, excelBook, excelSave, templatedir, jobFolder = saveCurrentResults(runName, groundMotion)
-# resultsFolder = ''
-# excelSave = ''
-# excelBook = op.load_workbook(excelSave)
+#create new results folder for specific run stamped with date and time
+resultsFolder, folderName, templatedir, jobFolder = saveCurrentResults(runName, groundMotion)
 
 #call function to perform Base Shear calcs and place values in summary sheet
 maxX, minX, maxY, minY, Weight, SlidingCap = BaseShear(resultsFolder, thisLoc)
 vals = [maxX, minX, maxY, minY, Weight, SlidingCap]
-name = 'FOUNDATION_TEMPLATE'
-templateName = os.path.join(templatedir, name)
-excelBook = op.load_workbook(templateName)
-baseShearData = excelBook["baseShearData"]
-for val in vals:
-    baseShearData.append(val)
-excelSave = jobFolder + 'FOUNDATION_RESULTS.xlsx'
-excelBook.save(excelSave)
+header = ["Max X (k)", "Min X (k)", "Max Y (k)", "Min Y (k)", "Building Weight (k)", "Sliding Capacity (k)"]
+data = pd.DataFrame([vals], columns=header)
+csvName = "baseShearSliding.csv"
+csvSave = os.path.join(resultsFolder, csvName)
+data.to_csv(csvSave)
 
 # #call function to perform brace design and calcs
 # maxDCR, maxTot, num_el = BraceDesign(thisLoc, resultsFolder)
